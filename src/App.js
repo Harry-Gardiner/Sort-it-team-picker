@@ -1,11 +1,11 @@
-import addPlayer from './Components/PlayerInput/'
+import AddPlayer from './Components/PlayerInput/'
 // Top component
-function App() {
+const App = () => {
   return (
     <>
       <h1>Sorted!</h1>
       <p>5-aside Team Picker</p>
-      <addPlayer />
+      <AddPlayer />
     </>
   )
 }

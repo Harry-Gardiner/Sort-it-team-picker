@@ -44,7 +44,7 @@ class PlayerInputForm extends Component {
                 onSubmit={this.handleSubmit}
             >
                 <div>
-                    <label for="player name">
+                    <label htmlFor="player name">
                         Input Player Name:
                     </label>
 

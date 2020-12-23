@@ -13,7 +13,7 @@ const addPlayer = (state, { data }) => {
 const reducer = (state, action) => {
     switch (action.type) {
         // cases
-        case "PLAYER_ADD": return addPlayer(state, action)
+        case "ADD_PLAYER": return addPlayer(state, action)
         // default
         default: return state;
     };
