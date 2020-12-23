@@ -13,6 +13,7 @@ class PlayerInputForm extends Component {
 
         // bind events
         this.handleName = this.handleName.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     // handle name input
@@ -44,7 +45,7 @@ class PlayerInputForm extends Component {
             >
                 <div>
                     <label for="player name">
-                        Player Name:
+                        Add Player Name:
                     </label>
 
                     <input

@@ -5,6 +5,7 @@ function App() {
     <>
       <h1>Sorted!</h1>
       <p>5-aside Team Picker</p>
+      <addPlayer />
     </>
   )
 }

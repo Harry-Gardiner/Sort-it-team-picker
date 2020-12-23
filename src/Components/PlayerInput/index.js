@@ -1,6 +1,7 @@
 // imports
 import { connect } from 'react-redux';
 import PlayerInputForm from './PlayerInputForm';
+import { addPlayer } from '../../data/actions';
 
 // Dispatch 
 const mapDispatchToProps = dispatch => {
