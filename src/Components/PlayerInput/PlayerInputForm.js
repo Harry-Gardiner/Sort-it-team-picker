@@ -9,11 +9,11 @@ class PlayerInputForm extends Component {
         // local state
         this.state = {
             playerName: "",
-        }
+        };
 
         // bind events
         this.handleName = this.handleName.bind(this);
-    };
+    }
 
     // handle name input
     handleName = e => {
