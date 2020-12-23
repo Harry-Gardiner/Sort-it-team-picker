@@ -45,7 +45,7 @@ class PlayerInputForm extends Component {
             >
                 <div>
                     <label for="player name">
-                        Add Player Name:
+                        Input Player Name:
                     </label>
 
                     <input
@@ -56,6 +56,12 @@ class PlayerInputForm extends Component {
                         onChange={this.handleName}
                     />
                 </div>
+
+                <button
+                    type="submit"
+                >
+                    Add Player
+                </button>
             </form>
         )
     }
