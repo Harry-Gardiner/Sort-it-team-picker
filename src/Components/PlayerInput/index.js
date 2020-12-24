@@ -3,6 +3,13 @@ import { connect } from 'react-redux';
 import PlayerInputForm from './PlayerInputForm';
 import { addPlayer } from '../../data/actions';
 
+// State
+const mapStateToProps = ({ requiredNumOfPlayers }) => {
+    return {
+        requiredNumOfPlayers: requiredNumOfPlayers,
+    }
+}
+
 // Dispatch 
 const mapDispatchToProps = dispatch => {
     return {
@@ -12,4 +19,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(PlayerInputForm)
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerInputForm)

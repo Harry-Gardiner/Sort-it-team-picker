@@ -38,6 +38,7 @@ class PlayerInputForm extends Component {
 
     render() {
         const { playerName } = this.state;
+        const { requiredNumOfPlayers } = this.props;
 
         return (
             <form
@@ -57,11 +58,13 @@ class PlayerInputForm extends Component {
                     />
                 </div>
 
-                <button
-                    type="submit"
-                >
-                    Add Player
-                </button>
+                { requiredNumOfPlayers ? null :
+                    <button
+                        type="submit"
+                    >
+                        Add Player
+                    </button>
+                }
             </form>
         )
     }
