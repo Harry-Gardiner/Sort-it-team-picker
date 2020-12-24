@@ -9,11 +9,22 @@ const addPlayer = (state, { data }) => {
     }
 }
 
+const checkNumOfPlayers = (state) => {
+    const numOfPlayers = state.players.length;
+
+    const matchesRequired = numOfPlayers === 10; // bool value
+
+    return {
+        ...state,
+        requiredNumOfPlayers: matchesRequired,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
         // cases
-        case "ADD_PLAYER": return addPlayer(state, action)
+        case "ADD_PLAYER": return checkNumOfPlayers(addPlayer(state, action))
         // default
         default: return state;
     };
