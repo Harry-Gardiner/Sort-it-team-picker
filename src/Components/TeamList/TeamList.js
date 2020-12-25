@@ -1,4 +1,4 @@
-const TeamList = ({ teamPlayers }) => {
+const TeamList = ({ teamPlayers }) => { // both teams will be passed into the same template, so prop is generic.
     return (
         <ul>
             {
@@ -13,3 +13,5 @@ const TeamList = ({ teamPlayers }) => {
         </ul>
     )
 }
+
+export default TeamList;
