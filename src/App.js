@@ -10,8 +10,8 @@ const App = () => {
       <p>5-aside Team Picker</p>
       <AddPlayer />
       <PlayerList />
-      <Team1List />
-      <Team2List />
+      <Team1List teamName="Team 1" />
+      <Team2List teamName="Team 2" />
     </>
   )
 }
