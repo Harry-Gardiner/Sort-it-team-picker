@@ -15,4 +15,11 @@ export const reset = () => {
     return {
         type: "RESET",
     }
-}
+};
+
+export const deletePlayer = (index) => {
+    return {
+        type: "DELETE_PLAYER",
+        index: index,
+    }
+};
