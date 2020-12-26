@@ -1,6 +1,6 @@
 // Logic - Fisher-Yates Algorithm - taken from https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb. 
 
-const randomiseArray = (playersArray) => {
+export const randomiseArray = (playersArray) => {
     for (let i = playersArray.length - 1; i > 0; i -= 1) {
         // for each iteration:
 
@@ -26,3 +26,4 @@ const randomiseArray = (playersArray) => {
 // const players = ["Tim", "Bob", "Rob", "Jim", "Zim"]
 
 // console.log(randomiseArray(players));
+
