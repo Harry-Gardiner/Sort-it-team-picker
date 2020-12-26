@@ -17,6 +17,6 @@ export const generateTeams = (playersArray) => {
 }
 
 // test
-const testarray = ["Yaz", "Rob", "Tim", "Bob", "Jim", "Log", "Haz", "Baz", "Tom", "Sam"]
+// const testarray = ["Yaz", "Rob", "Tim", "Bob", "Jim", "Log", "Haz", "Baz", "Tom", "Sam"]
 
-console.log(generateTeams(testarray));
+// console.log(generateTeams(testarray));

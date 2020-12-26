@@ -3,8 +3,8 @@ const PlayerList = ({ players, handleClick }) => {
         <ul>
             { players.map((player, index) => {
                 return (
-                    <>
-                        <li key={index}>
+                    <div key={index}>
+                        <li>
                             {player.name}
                         </li>
                         <button
@@ -12,7 +12,7 @@ const PlayerList = ({ players, handleClick }) => {
                         >
                             x
                         </button>
-                    </>
+                    </div>
                 )
             })}
         </ul>

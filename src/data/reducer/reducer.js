@@ -3,6 +3,7 @@ import initial from '../initial';
 import { randomiseArray } from '../../Logic/randomiseArray';
 import { generateTeams } from '../../Logic/generateTeams';
 
+
 // update functions
 const addPlayer = (state, { data }) => {
     return {
@@ -35,12 +36,28 @@ const createRandomTeams = (state) => {
     }
 }
 
+const deletePlayer = (state, action) => {
+    // get player index
+    let playerToDelete = action.index;
+    // get players array from state
+    let playersArray = state.players
+
+    // filter out player to delete
+    playersArray = playersArray.filter((player, index) => index !== playerToDelete)
+
+    return {
+        ...state,
+        players: playersArray,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
         // cases
         case "ADD_PLAYER": return checkNumOfPlayers(addPlayer(state, action));
         case "CREATE_TEAMS": return createRandomTeams(state);
+        case "DELETE_PLAYER": return deletePlayer(state, action);
         case "RESET": return initial;
         // default
         default: return state;
