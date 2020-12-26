@@ -3,6 +3,7 @@ import PlayerList from './Components/PlayerList'
 import Team1List from './Components/TeamList/Team1List';
 import Team2List from './Components/TeamList/Team2List';
 import CreateTeams from './Components/CreateTeams';
+import Reset from './Components/Reset';
 // Top component
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <CreateTeams />
       <Team1List teamName="Team 1" />
       <Team2List teamName="Team 2" />
+      <Reset />
     </>
   )
 }

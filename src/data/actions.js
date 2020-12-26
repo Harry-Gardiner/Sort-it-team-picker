@@ -3,10 +3,16 @@ export const addPlayer = data => {
         type: "ADD_PLAYER",
         data: data,
     }
-}
+};
 
 export const createTeams = () => {
     return {
         type: "CREATE_TEAMS",
+    }
+};
+
+export const reset = () => {
+    return {
+        type: "RESET",
     }
 }

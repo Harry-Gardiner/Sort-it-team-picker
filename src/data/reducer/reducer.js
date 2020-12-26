@@ -1,5 +1,5 @@
 // imports
-//import initial from '../initial';
+import initial from '../initial';
 import { randomiseArray } from '../../Logic/randomiseArray';
 import { generateTeams } from '../../Logic/generateTeams';
 
@@ -41,6 +41,7 @@ const reducer = (state, action) => {
         // cases
         case "ADD_PLAYER": return checkNumOfPlayers(addPlayer(state, action));
         case "CREATE_TEAMS": return createRandomTeams(state);
+        case "RESET": return initial;
         // default
         default: return state;
     };
