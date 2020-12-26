@@ -4,3 +4,9 @@ export const addPlayer = data => {
         data: data,
     }
 }
+
+export const createTeams = () => {
+    return {
+        type: "CREATE_TEAMS",
+    }
+}

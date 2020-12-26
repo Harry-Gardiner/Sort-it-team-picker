@@ -3,9 +3,8 @@ const initial = {
     players: [],
     requiredNumOfPlayers: false,
 
-    // Test 
-    team1Players: [{ name: "Tim" }, { name: "Bob" }, { name: "Rob" }],
-    team2Players: [{ name: "Fim" }, { name: "Lob" }, { name: "Tod" }],
+    team1Players: [],
+    team2Players: [],
 };
 
 export default initial;
