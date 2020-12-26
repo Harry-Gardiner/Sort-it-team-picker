@@ -24,7 +24,8 @@ const checkNumOfPlayers = (state) => {
 const reducer = (state, action) => {
     switch (action.type) {
         // cases
-        case "ADD_PLAYER": return checkNumOfPlayers(addPlayer(state, action))
+        case "ADD_PLAYER": return checkNumOfPlayers(addPlayer(state, action));
+        case "CREATE_TEAMS": return
         // default
         default: return state;
     };
