@@ -1,9 +1,9 @@
-const NumberOfPlayers = ({ }) => {
+const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
     return (
         <div>
             <p>Set team size</p>
 
-            <p>{NumOfPlayers}-aside Team Picker</p>
+            <p>{numberOfPlayers}-aside Team Picker</p>
 
             <button
                 onClick={handleAdd}
