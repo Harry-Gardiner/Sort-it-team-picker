@@ -1,7 +1,7 @@
 // initial state
 const initial = {
     players: [],
-    numberOfPlayers: 10,
+    numberOfPlayers: 5,
     requiredNumOfPlayers: false,
 
     teamsPicked: false,

@@ -1,7 +1,7 @@
 const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
     return (
         <div>
-            <p>Set team size</p>
+            <p>Set team size:</p>
 
             <p>{numberOfPlayers}-aside Team Picker</p>
 
@@ -13,6 +13,7 @@ const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
 
             <button
                 onClick={handleMinus}
+                disabled={numberOfPlayers <= 2} // cant go below 2-aside, i.e. 4 players in total
             >
                 -
             </button>

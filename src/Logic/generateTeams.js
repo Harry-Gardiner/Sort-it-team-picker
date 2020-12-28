@@ -1,11 +1,9 @@
 export const generateTeams = (playersArray) => {
-    // check if array length is 10
-    if (playersArray.length !== 10) {
-        return "10 Players are required";
-    };
+    // middle of array
+    const midpoint = playersArray.length / 2;
 
     // get first 5 players
-    const team1 = playersArray.splice(0, 5);
+    const team1 = playersArray.splice(0, midpoint);
 
     // get remaining 5 players
     const team2 = playersArray;
@@ -17,6 +15,6 @@ export const generateTeams = (playersArray) => {
 }
 
 // test
-// const testarray = ["Yaz", "Rob", "Tim", "Bob", "Jim", "Log", "Haz", "Baz", "Tom", "Sam"]
+// const testarray = ["Yaz", "Rob", "Tim", "Bob", "Jim", "Log", "Haz", "Baz", "Tom", "Sam", "a", "B", "CC", "DD"]
 
 // console.log(generateTeams(testarray));

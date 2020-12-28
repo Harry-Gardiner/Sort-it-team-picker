@@ -16,7 +16,7 @@ const addPlayer = (state, { data }) => {
 const checkNumOfPlayers = (state) => {
     const numOfPlayers = state.players.length;
 
-    const matchesRequired = numOfPlayers === 10; // bool value
+    const matchesRequired = numOfPlayers === state.numberOfPlayers * 2; // bool value
 
     return {
         ...state,
@@ -48,7 +48,7 @@ const deletePlayer = (state, action) => {
     playersArray = playersArray.filter((player, index) => index !== playerToDelete)
 
     // Check if enough players have been added
-    const checkEnoughPlayers = playersArray.length === state.numberOfPlayers ? true : false;
+    const checkEnoughPlayers = playersArray.length === state.numberOfPlayers * 2 ? true : false;
 
     return {
         ...state,
