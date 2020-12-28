@@ -4,6 +4,7 @@ import { randomiseArray } from '../../Logic/randomiseArray';
 import { generateTeams } from '../../Logic/generateTeams';
 
 
+
 // update functions
 const addPlayer = (state, { data }) => {
     return {
@@ -56,6 +57,15 @@ const deletePlayer = (state, action) => {
     }
 }
 
+const setTeamColour = (state, { colour, team }) => {
+    // set team colours based on team value passed in. If no value colour remains current state    
+    return {
+        ...state,
+        team1Colour: team === 1 ? colour : state.team1Colour,
+        team2Colour: team === 2 ? colour : state.team2Colour,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -63,6 +73,7 @@ const reducer = (state, action) => {
         case "ADD_PLAYER": return checkNumOfPlayers(addPlayer(state, action));
         case "CREATE_TEAMS": return createRandomTeams(state);
         case "DELETE_PLAYER": return deletePlayer(state, action);
+        case "SET_COLOUR": return setTeamColour(state, action);
         case "RESET": return initial;
         // default
         default: return state;
