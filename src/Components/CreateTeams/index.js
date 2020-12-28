@@ -4,9 +4,10 @@ import CreateTeams from './CreateTeams';
 import { createTeams } from '../../data/actions';
 
 // state
-const mapStateToProps = ({ requiredNumOfPlayers }) => {
+const mapStateToProps = ({ requiredNumOfPlayers, teamsPicked }) => {
     return {
         requiredNumOfPlayers: requiredNumOfPlayers,
+        teamsPicked: teamsPicked,
     }
 }
 

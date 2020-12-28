@@ -33,6 +33,7 @@ const createRandomTeams = (state) => {
         ...state,
         team1Players: teams[0],
         team2Players: teams[1],
+        teamsPicked: true,
     }
 }
 
