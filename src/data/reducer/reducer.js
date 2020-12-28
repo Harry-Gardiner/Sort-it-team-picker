@@ -33,21 +33,26 @@ const createRandomTeams = (state) => {
         ...state,
         team1Players: teams[0],
         team2Players: teams[1],
+        teamsPicked: true,
     }
 }
 
 const deletePlayer = (state, action) => {
     // get player index
-    let playerToDelete = action.index;
+    const playerToDelete = action.index;
     // get players array from state
     let playersArray = state.players
 
     // filter out player to delete
     playersArray = playersArray.filter((player, index) => index !== playerToDelete)
 
+    // Check if enough players have been added
+    const checkEnoughPlayers = playersArray.length === 10 ? true : false;
+
     return {
         ...state,
         players: playersArray,
+        requiredNumOfPlayers: checkEnoughPlayers,
     }
 }
 

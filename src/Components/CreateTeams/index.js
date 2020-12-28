@@ -3,6 +3,14 @@ import { connect } from 'react-redux';
 import CreateTeams from './CreateTeams';
 import { createTeams } from '../../data/actions';
 
+// state
+const mapStateToProps = ({ requiredNumOfPlayers, teamsPicked }) => {
+    return {
+        requiredNumOfPlayers: requiredNumOfPlayers,
+        teamsPicked: teamsPicked,
+    }
+}
+
 // dispatch
 const mapDispatchToProps = dispatch => {
     return {
@@ -10,4 +18,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(CreateTeams);
+export default connect(mapStateToProps, mapDispatchToProps)(CreateTeams);
