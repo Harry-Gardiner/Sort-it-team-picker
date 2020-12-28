@@ -11,7 +11,7 @@ const mapStateToProps = ({ players }) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleClick: (index) => dispatch(deletePlayer(index))
+        handleClick: (data) => dispatch(deletePlayer(data))
     }
 }
 

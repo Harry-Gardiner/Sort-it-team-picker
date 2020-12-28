@@ -8,8 +8,8 @@ const initial = {
     team1Players: [],
     team2Players: [],
 
-    team1Colour: "red",
-    team2Colour: "blue",
+    team1Colour: "",
+    team2Colour: "",
 };
 
 export default initial;

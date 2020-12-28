@@ -1,4 +1,4 @@
-export const addPlayer = data => {
+export const addPlayer = (data) => {
     return {
         type: "ADD_PLAYER",
         data: data,
@@ -17,9 +17,25 @@ export const reset = () => {
     }
 };
 
-export const deletePlayer = (index) => {
+export const deletePlayer = (data) => {
     return {
         type: "DELETE_PLAYER",
-        index: index,
+        index: data,
     }
 };
+
+export const setColour1 = (data) => {
+    return {
+        type: "SET_COLOUR",
+        colour: data,
+        team: 1,
+    }
+}
+
+export const setColour2 = (data) => {
+    return {
+        type: "SET_COLOUR",
+        colour: data,
+        team: 2,
+    }
+}
