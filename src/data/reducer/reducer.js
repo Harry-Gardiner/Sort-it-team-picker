@@ -48,7 +48,7 @@ const deletePlayer = (state, action) => {
     playersArray = playersArray.filter((player, index) => index !== playerToDelete)
 
     // Check if enough players have been added
-    const checkEnoughPlayers = playersArray.length === 10 ? true : false;
+    const checkEnoughPlayers = playersArray.length === state.numberOfPlayers ? true : false;
 
     return {
         ...state,
@@ -66,6 +66,13 @@ const setTeamColour = (state, { colour, team }) => {
     }
 }
 
+const setNumberOfPlayers = (state, { value }) => {
+    return {
+        ...state,
+        numberOfPlayers: state.numberOfPlayers + value,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -74,6 +81,7 @@ const reducer = (state, action) => {
         case "CREATE_TEAMS": return createRandomTeams(state);
         case "DELETE_PLAYER": return deletePlayer(state, action);
         case "SET_COLOUR": return setTeamColour(state, action);
+        case "SET_NUMBER_OF_PLAYERS": return setNumberOfPlayers(state, action)
         case "RESET": return initial;
         // default
         default: return state;
