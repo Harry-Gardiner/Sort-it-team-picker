@@ -3,7 +3,7 @@ const CreateTeams = ({ handleClick, requiredNumOfPlayers, teamsPicked }) => {
         <button
             disabled={requiredNumOfPlayers ? false : true}
             onClick={handleClick}
-            style={{ visibility: teamsPicked ? "hidden" : "none" }}
+            style={{ visibility: teamsPicked ? "hidden" : "visible" }}
         >
             Create Teams
         </button>

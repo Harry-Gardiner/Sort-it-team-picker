@@ -61,7 +61,7 @@ class PlayerInputForm extends Component {
 
                 { requiredNumOfPlayers ? null :
                     <button
-                        type="button"
+                        type="submit"
                     >
                         Add Player
                     </button>
