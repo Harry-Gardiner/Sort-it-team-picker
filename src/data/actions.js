@@ -30,7 +30,7 @@ export const setColour1 = (data) => {
         colour: data,
         team: 1,
     }
-}
+};
 
 export const setColour2 = (data) => {
     return {
@@ -38,4 +38,11 @@ export const setColour2 = (data) => {
         colour: data,
         team: 2,
     }
-}
+};
+
+export const setNumber = (data) => {
+    return {
+        type: "SET_NUMBER_OF_PLAYERS",
+        value: data,
+    }
+};
