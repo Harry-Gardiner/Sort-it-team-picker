@@ -55,12 +55,13 @@ class PlayerInputForm extends Component {
                         name="player name"
                         value={playerName}
                         onChange={this.handleName}
+                        disabled={requiredNumOfPlayers ? true : false}
                     />
                 </div>
 
                 { requiredNumOfPlayers ? null :
                     <button
-                        type="submit"
+                        type="button"
                     >
                         Add Player
                     </button>
