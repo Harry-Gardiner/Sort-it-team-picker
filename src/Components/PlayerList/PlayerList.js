@@ -4,7 +4,10 @@ const PlayerList = ({ players, handleClick }) => {
             { players.map((player, index) => {
                 return (
                     <div key={index}>
-                        <li>
+                        <li
+                            key={index}
+                            className="capitalize"
+                        >
                             {player.name}
                             <span style={{ position: "absolute", right: "2rem" }}>skill: {player.skill}</span>
                         </li>
