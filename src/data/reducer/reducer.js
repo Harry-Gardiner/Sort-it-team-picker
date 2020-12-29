@@ -73,7 +73,7 @@ const createBalancedTeams = (state) => {
     const players = state.players;
     // sort array based on skill highest to lowest then split array
     const teams = generateTeams(balanceTeams(players));
-    console.log(teams);
+
     return {
         ...state,
         team1Players: teams[0],
