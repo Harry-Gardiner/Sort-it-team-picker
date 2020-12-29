@@ -9,11 +9,13 @@ class PlayerInputForm extends Component {
         // local state
         this.state = {
             playerName: "",
+            playerSkill: 2,
         };
 
         // bind events
         this.handleName = this.handleName.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSkill = this.handleSkill.bind(this);
     }
 
     // handle name input
@@ -23,21 +25,30 @@ class PlayerInputForm extends Component {
         })
     }
 
+    // handle skill selection
+    handleSkill = e => {
+        this.setState({
+            playerSkill: +e.currentTarget.value
+        })
+    }
+
     // handle form submit
     handleSubmit = e => {
         e.preventDefault();
 
+        // pass up a copy of state, i.e. name and skill
         this.props.handleSubmit({ ...this.state });
 
         // reset local state
         this.setState({
             playerName: "",
+            playerSkill: 2,
         })
 
     }
 
     render() {
-        const { playerName } = this.state;
+        const { playerName, playerSkill } = this.state;
         const { requiredNumOfPlayers } = this.props;
 
         return (
@@ -56,6 +67,22 @@ class PlayerInputForm extends Component {
                         value={playerName}
                         onChange={this.handleName}
                         disabled={requiredNumOfPlayers ? true : false}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="player skill">
+                        Select Player Skill:
+                    </label>
+
+                    <input
+                        type="range"
+                        id="points"
+                        name="points"
+                        min="1"
+                        max="5"
+                        value={playerSkill}
+                        step="1" // + / - each movement
+                        onChange={this.handleSkill}
                     />
                 </div>
 

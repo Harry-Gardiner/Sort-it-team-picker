@@ -8,6 +8,7 @@ const TeamList = ({ teamPlayers, teamName }) => { // both teams will be passed i
                         return (
                             <li key={index}>
                                 {player.name}
+                                <span style={{ position: "absolute", right: "2rem" }}>skill: {player.skill}</span>
                             </li>
                         )
                     })

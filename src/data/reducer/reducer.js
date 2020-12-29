@@ -9,7 +9,7 @@ import { generateTeams } from '../../Logic/generateTeams';
 const addPlayer = (state, { data }) => {
     return {
         ...state,
-        players: [...state.players, { name: data.playerName }]
+        players: [...state.players, { name: data.playerName, skill: data.playerSkill }]
     }
 }
 
