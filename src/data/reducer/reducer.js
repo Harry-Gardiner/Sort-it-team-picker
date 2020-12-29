@@ -2,6 +2,7 @@
 import initial from '../initial';
 import { randomiseArray, generateTeams, balanceTeams } from '../../Logic/logic';
 
+
 // update functions
 const addPlayer = (state, { data }) => {
     return {
@@ -82,6 +83,17 @@ const createBalancedTeams = (state) => {
     }
 }
 
+const toggleHomeTeam = (state) => {
+    const homeTeam = state.team1Home;
+
+    const toggleTeam = homeTeam ? false : true;
+
+    return {
+        ...state,
+        team1Home: toggleTeam,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -92,6 +104,7 @@ const reducer = (state, action) => {
         case "SET_COLOUR": return setTeamColour(state, action);
         case "SET_NUMBER_OF_PLAYERS": return setNumberOfPlayers(state, action);
         case "CREATE_BALANCED_TEAMS": return createBalancedTeams(state);
+        case "TOGGLE_HOME_BUTTONS": return toggleHomeTeam(state);
         case "RESET": return initial;
         // default
         default: return state;
