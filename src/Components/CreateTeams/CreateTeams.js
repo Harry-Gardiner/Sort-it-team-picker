@@ -5,7 +5,7 @@ const CreateTeams = ({ handleClick, requiredNumOfPlayers, teamsPicked }) => {
             onClick={handleClick}
             style={{ visibility: teamsPicked ? "hidden" : "visible" }}
         >
-            Create Teams
+            Random Teams
         </button>
     )
 }
