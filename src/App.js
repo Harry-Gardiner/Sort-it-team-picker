@@ -3,6 +3,7 @@ import PlayerList from './Components/PlayerList'
 import Team1List from './Components/TeamList/Team1List';
 import Team2List from './Components/TeamList/Team2List';
 import CreateTeams from './Components/CreateTeams';
+import CreateBalancedTeams from './Components/CreateBalancedTeams';
 import Reset from './Components/Reset';
 import Team1Colour from './Components/PickColour/Colour1';
 import Team2Colour from './Components/PickColour/Colour2';
@@ -17,7 +18,10 @@ const App = () => {
       <NumberOfPlayers />
       <AddPlayer />
       <PlayerList />
-      <CreateTeams />
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <CreateTeams />
+        <CreateBalancedTeams />
+      </div>
       <Team1List teamName="Team 1" />
       <Team1Jersey />
       <Team1Colour />

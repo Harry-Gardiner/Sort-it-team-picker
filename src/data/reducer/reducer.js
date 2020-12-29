@@ -81,7 +81,8 @@ const reducer = (state, action) => {
         case "CREATE_TEAMS": return createRandomTeams(state);
         case "DELETE_PLAYER": return deletePlayer(state, action);
         case "SET_COLOUR": return setTeamColour(state, action);
-        case "SET_NUMBER_OF_PLAYERS": return setNumberOfPlayers(state, action)
+        case "SET_NUMBER_OF_PLAYERS": return setNumberOfPlayers(state, action);
+        // case "CREATE_BALANCED_TEAMS": return createBalancedTeams(state);
         case "RESET": return initial;
         // default
         default: return state;
