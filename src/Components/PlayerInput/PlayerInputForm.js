@@ -48,7 +48,7 @@ class PlayerInputForm extends Component {
     }
 
     render() {
-        const { playerName } = this.state;
+        const { playerName, playerSkill } = this.state;
         const { requiredNumOfPlayers } = this.props;
 
         return (
@@ -80,7 +80,7 @@ class PlayerInputForm extends Component {
                         name="points"
                         min="1"
                         max="5"
-                        defaultValue="2"
+                        value={playerSkill}
                         step="1" // + / - each movement
                         onChange={this.handleSkill}
                     />
