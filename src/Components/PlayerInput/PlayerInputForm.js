@@ -67,6 +67,8 @@ class PlayerInputForm extends Component {
                         value={playerName}
                         onChange={this.handleName}
                         disabled={requiredNumOfPlayers ? true : false}
+                        maxLength="25"
+                        minLength="2"
                     />
                 </div>
                 <div>

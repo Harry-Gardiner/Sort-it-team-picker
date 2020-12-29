@@ -6,7 +6,10 @@ const TeamList = ({ teamPlayers, teamName }) => { // both teams will be passed i
                 {
                     teamPlayers.map((player, index) => {
                         return (
-                            <li key={index}>
+                            <li
+                                key={index}
+                                className="capitalize"
+                            >
                                 {player.name}
                                 <span style={{ position: "absolute", right: "2rem" }}>skill: {player.skill}</span>
                             </li>
