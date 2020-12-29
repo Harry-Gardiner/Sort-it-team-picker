@@ -52,3 +52,9 @@ export const setNumber = (data) => {
         value: data,
     }
 };
+
+export const toggleHomeTeam = () => {
+    return {
+        type: "TOGGLE_HOME_BUTTONS"
+    }
+};

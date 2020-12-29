@@ -10,12 +10,16 @@ import Team2Colour from './Components/PickColour/Colour2';
 import Team1Jersey from './Components/TeamJersey/Team1Jersey';
 import Team2Jersey from './Components/TeamJersey/Team2Jersey';
 import NumberOfPlayers from './Components/NumberOfPlayers';
+import HomeButton1 from './Components/HomeTeam/Team1Button';
+import HomeButton2 from './Components/HomeTeam/Team2Button';
 // Top component
 const App = () => {
   return (
     <>
       <h1>Sorted!</h1>
       <NumberOfPlayers />
+      <HomeButton1 />
+      <HomeButton2 />
       <AddPlayer />
       <PlayerList />
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
