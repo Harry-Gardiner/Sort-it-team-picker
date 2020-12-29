@@ -1,9 +1,6 @@
 // imports
 import initial from '../initial';
-import { randomiseArray } from '../../Logic/randomiseArray';
-import { generateTeams } from '../../Logic/generateTeams';
-
-
+import { randomiseArray, generateTeams, balanceTeams } from '../../Logic/logic';
 
 // update functions
 const addPlayer = (state, { data }) => {
@@ -26,7 +23,6 @@ const checkNumOfPlayers = (state) => {
 
 const createRandomTeams = (state) => {
     const players = state.players;
-
     // run players array through logic to randomise and split into 2 teams
     const teams = generateTeams(randomiseArray(players));
 
@@ -73,6 +69,19 @@ const setNumberOfPlayers = (state, { value }) => {
     }
 }
 
+const createBalancedTeams = (state) => {
+    const players = state.players;
+    // sort array based on skill highest to lowest then split array
+    const teams = generateTeams(balanceTeams(players));
+
+    return {
+        ...state,
+        team1Players: teams[0],
+        team2Players: teams[1],
+        teamsPicked: true,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -82,7 +91,7 @@ const reducer = (state, action) => {
         case "DELETE_PLAYER": return deletePlayer(state, action);
         case "SET_COLOUR": return setTeamColour(state, action);
         case "SET_NUMBER_OF_PLAYERS": return setNumberOfPlayers(state, action);
-        // case "CREATE_BALANCED_TEAMS": return createBalancedTeams(state);
+        case "CREATE_BALANCED_TEAMS": return createBalancedTeams(state);
         case "RESET": return initial;
         // default
         default: return state;
