@@ -37,24 +37,34 @@ export const balanceTeams = (playersArray) => {
 // const testarray = [{ name: "Bom", skill: 2 }, { name: "Lom", skill: 5 }, { name: "Kom", skill: 5 }, { name: "Rom", skill: 4 }, { name: "Com", skill: 4 }, { name: "Jom", skill: 3 }, { name: "Tom", skill: 3 }, { name: "Jim", skill: 2 }]
 // console.log(balanceTeams(testarray));
 
-// Logic for generating team from array passed in
+// Logic for splitting either randomised array/balanced array. First loop (i = 0) grabs all even array items, second loop (i = 1) grabs all odd items.  
 export const generateTeams = (playersArray) => {
-    // middle of array
-    const midpoint = playersArray.length / 2;
+    const teamArrays = [];
 
-    // get first 5 players
-    const team1 = playersArray.splice(0, midpoint);
+    for (let i = 0; i < 2; i += 1) {
+        teamArrays.push(playersArray.filter((player, index) => index % 2 === i))
+    };
 
-    // get remaining 5 players
-    const team2 = playersArray;
-
-    // store teams as nested arrays
-    const teams = [team1, team2];
-
-    return teams;
+    return teamArrays;
 };
 
 // test
 // const testarray = ["Yaz", "Rob", "Tim", "Bob", "Jim", "Log", "Haz", "Baz", "Tom", "Sam", "a", "B", "CC", "DD"]
+// console.log(generateTeams2(testarray));
 
-// console.log(generateTeams(testarray));
+// OLD LOGIC for creating team, but only works for random array. Splice cannot be used to creat balanced arrays
+// export const generateTeams = (playersArray) => {
+//     // middle of array
+//     const midpoint = playersArray.length / 2;
+
+//     // get first 5 players
+//     const team1 = playersArray.splice(0, midpoint);
+
+//     // get remaining 5 players
+//     const team2 = playersArray;
+
+//     // store teams as nested arrays
+//     const teams = [team1, team2];
+
+//     return teams;
+// };
