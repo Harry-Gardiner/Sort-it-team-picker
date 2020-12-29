@@ -1,9 +1,6 @@
 // imports
 import initial from '../initial';
-import { randomiseArray } from '../../Logic/randomiseArray';
-import { generateTeams } from '../../Logic/generateTeams';
-
-
+import { randomiseArray, generateTeams, balanceTeams } from '../../Logic/logic';
 
 // update functions
 const addPlayer = (state, { data }) => {
