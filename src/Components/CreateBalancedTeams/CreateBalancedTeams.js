@@ -1,13 +1,13 @@
-const CreateTeams = ({ handleClick, requiredNumOfPlayers, teamsPicked }) => {
+const CreateBalancedTeams = ({ handleClick, requiredNumOfPlayers, teamsPicked }) => {
     return (
         <button
             disabled={requiredNumOfPlayers ? false : true}
             onClick={handleClick}
             style={{ visibility: teamsPicked ? "hidden" : "visible" }}
         >
-            Random Teams
+            Balanced Teams
         </button>
     )
 }
 
-export default CreateTeams;
+export default CreateBalancedTeams;

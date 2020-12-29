@@ -11,6 +11,12 @@ export const createTeams = () => {
     }
 };
 
+export const createBalancedTeams = () => {
+    return {
+        type: "CREATE_BALANCED_TEAMS",
+    }
+};
+
 export const reset = () => {
     return {
         type: "RESET",
