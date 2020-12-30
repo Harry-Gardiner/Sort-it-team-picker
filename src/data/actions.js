@@ -58,3 +58,10 @@ export const toggleHomeTeam = () => {
         type: "TOGGLE_HOME_BUTTONS"
     }
 };
+
+export const setTeamName = (data) => {
+    return {
+        type: "SET_TEAM_NAMES",
+        teamNames: data,
+    }
+}

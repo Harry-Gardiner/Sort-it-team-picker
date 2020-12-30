@@ -8,27 +8,27 @@ class TeamNameInput extends Component {
 
         // local state
         this.state = {
-            Team1Name: "",
-            Team2Name: "",
+            team1Name: "",
+            team2Name: "",
         };
 
         // bind events
-        this.handleTeam1Name = this.handleTeam1Name.bind(this);
-        this.handleTeam2Name = this.handleTeam2Name.bind(this);
+        this.handleteam1Name = this.handleteam1Name.bind(this);
+        this.handleteam2Name = this.handleteam2Name.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
     // handle Team 1 name input
-    handleTeam1Name = e => {
+    handleteam1Name = e => {
         this.setState({
-            Team1Name: e.currentTarget.value
+            team1Name: e.currentTarget.value
         })
     };
 
     // handle Team 2 name input
-    handleTeam2Name = e => {
+    handleteam2Name = e => {
         this.setState({
-            Team2Name: e.currentTarget.value
+            team2Name: e.currentTarget.value
         })
     };
 
@@ -36,18 +36,18 @@ class TeamNameInput extends Component {
     handleSubmit = e => {
         e.preventDefault();
 
-        // pass up a copy of state, i.e. name and skill
+        // pass up a copy of state
         this.props.handleSubmit({ ...this.state });
 
         // reset local state
         this.setState({
-            Team1Name: "",
-            Team2Name: "",
+            team1Name: "",
+            team2Name: "",
         })
     };
 
     render() {
-        const { Team1Name, Team2Name } = this.state;
+        const { team1Name, team2Name } = this.state;
 
         return (
             <form
@@ -62,8 +62,8 @@ class TeamNameInput extends Component {
                         type="text"
                         id="Team 1 name"
                         name="Team 1 name"
-                        value={Team1Name}
-                        onChange={this.handleTeam1Name}
+                        value={team1Name}
+                        onChange={this.handleteam1Name}
                         maxLength="25"
                         minLength="2"
                         placeholder="Team 1"
@@ -79,8 +79,8 @@ class TeamNameInput extends Component {
                         type="text"
                         id="Team 2 name"
                         name="Team 2 name"
-                        value={Team2Name}
-                        onChange={this.handleTeam2Name}
+                        value={team2Name}
+                        onChange={this.handleteam2Name}
                         maxLength="25"
                         minLength="2"
                         placeholder="Team 2"
@@ -92,7 +92,7 @@ class TeamNameInput extends Component {
                 <button
                     type="submit"
                 >
-                    Submit Team Names
+                    Confirm Team Names
                 </button>
 
             </form>

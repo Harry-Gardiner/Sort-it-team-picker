@@ -12,7 +12,7 @@ import Team2Jersey from './Components/TeamJersey/Team2Jersey';
 import NumberOfPlayers from './Components/NumberOfPlayers';
 import HomeButton1 from './Components/HomeTeam/Team1Button';
 import HomeButton2 from './Components/HomeTeam/Team2Button';
-import InputTeamNames from './Components/TeamNameInput/TeamNameInput';
+import InputTeamNames from './Components/TeamNameInput';
 // Top component
 const App = () => {
   return (

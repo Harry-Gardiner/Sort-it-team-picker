@@ -94,6 +94,14 @@ const toggleHomeTeam = (state) => {
     }
 }
 
+const setTeamNames = (state, { teamNames }) => {
+    return {
+        ...state,
+        team1Name: teamNames.team1Name,
+        team2Name: teamNames.team2Name,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -105,6 +113,7 @@ const reducer = (state, action) => {
         case "SET_NUMBER_OF_PLAYERS": return setNumberOfPlayers(state, action);
         case "CREATE_BALANCED_TEAMS": return createBalancedTeams(state);
         case "TOGGLE_HOME_BUTTONS": return toggleHomeTeam(state);
+        case "SET_TEAM_NAMES": return setTeamNames(state, action);
         case "RESET": return initial;
         // default
         default: return state;
