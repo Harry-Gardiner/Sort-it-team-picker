@@ -4,13 +4,14 @@ import BookiesFavourite from './BookiesFavourite';
 import { createBookiesFavourite } from '../../data/actions';
 
 // state
-const mapStateToProps = ({ team1Name, team2Name, teamsPicked, bookiesFavouriteInfo, showBookiesFavourite }) => {
+const mapStateToProps = ({ team1Name, team2Name, teamsPicked, bookiesFavouriteInfo, showBookiesFavourite, team1Home }) => {
     return {
         team1Name,
         team2Name,
         teamsPicked,
         bookiesFavouriteInfo,
         showBookiesFavourite,
+        team1Home
     }
 }
 
