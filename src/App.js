@@ -28,10 +28,10 @@ const App = () => {
         <CreateTeams />
         <CreateBalancedTeams />
       </div>
-      <Team1List teamName="Team 1" />
+      <Team1List />
       <Team1Jersey />
       <Team1Colour />
-      <Team2List teamName="Team 2" />
+      <Team2List />
       <Team2Jersey />
       <Team2Colour />
       <Reset />
