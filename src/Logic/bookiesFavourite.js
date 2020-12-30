@@ -1,5 +1,5 @@
 // Take a team array and get back combined skill score
-const getTeamSkill = (teamArray) => {
+export const getTeamSkill = (teamArray) => {
     // get array of players skill
     const arrayOfTeamSkills = teamArray.map((player) => {
         return player.skill
@@ -11,12 +11,12 @@ const getTeamSkill = (teamArray) => {
     })
 };
 
-const calculateHomeAdvantage = (teamSkillTotal) => {
+export const calculateHomeAdvantage = (teamSkillTotal) => {
     // home team skill is given + 20% advantage
     return teamSkillTotal *= 1.20
 };
 
-const getScores = (team1Home, playersTeam1, playersTeam2) => {
+export const getScores = (team1Home, playersTeam1, playersTeam2) => {
     // get team total skill
     let team1Skill = getTeamSkill(playersTeam1);
     let team2Skill = getTeamSkill(playersTeam2);
@@ -36,10 +36,12 @@ const getScores = (team1Home, playersTeam1, playersTeam2) => {
 };
 
 // takes an object - team skill passed through getScores()
-const setFavouriteTeam = (teamSkills) => {
+export const setFavouriteTeam = (teamSkills) => {
     // returns
     return teamSkills.team1Skill > teamSkills.team2Skill ? "team1" : "team2"
-}
+};
+
+
 
 //test
 // const testarray1 = [{ name: "Bom", skill: 2 }, { name: "Lom", skill: 5 }, { name: "Kom", skill: 5 }, { name: "Rom", skill: 4 }, { name: "Com", skill: 4 }, { name: "Jom", skill: 3 }, { name: "Tom", skill: 3 }, { name: "Jim", skill: 2 }]
@@ -47,4 +49,5 @@ const setFavouriteTeam = (teamSkills) => {
 // const team1Home = false;
 // const scores = getScores(team1Home, testarray1, testarray2);
 // console.log(getScores(team1Home, testarray1, testarray2));
+// const scores = { team1Skill: 200, team2Skill: 100 };
 // console.log(setFavouriteTeam(scores));

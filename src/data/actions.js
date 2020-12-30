@@ -64,4 +64,10 @@ export const setTeamName = (data) => {
         type: "SET_TEAM_NAMES",
         teamNames: data,
     }
+};
+
+export const createBookiesFavourite = () => {
+    return {
+        type: "CREATE_BOOKIES_FAVOURITE",
+    }
 }
