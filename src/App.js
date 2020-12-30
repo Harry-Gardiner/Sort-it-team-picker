@@ -13,6 +13,7 @@ import NumberOfPlayers from './Components/NumberOfPlayers';
 import HomeButton1 from './Components/HomeTeam/Team1Button';
 import HomeButton2 from './Components/HomeTeam/Team2Button';
 import InputTeamNames from './Components/TeamNameInput';
+import BookiesFavourite from './Components/BookiesFavourite/BookiesFavourite';
 // Top component
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
       <Team2List />
       <Team2Jersey />
       <Team2Colour />
+      <BookiesFavourite />
       <Reset />
     </>
   )
