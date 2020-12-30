@@ -13,6 +13,9 @@ const initial = {
     team2Colour: "",
 
     team1Home: true,
+
+    team1Name: "Team 1",
+    team2Name: "Team 2",
 };
 
 export default initial;

@@ -12,12 +12,14 @@ import Team2Jersey from './Components/TeamJersey/Team2Jersey';
 import NumberOfPlayers from './Components/NumberOfPlayers';
 import HomeButton1 from './Components/HomeTeam/Team1Button';
 import HomeButton2 from './Components/HomeTeam/Team2Button';
+import InputTeamNames from './Components/TeamNameInput/TeamNameInput';
 // Top component
 const App = () => {
   return (
     <>
       <h1>Sorted!</h1>
       <NumberOfPlayers />
+      <InputTeamNames />
       <HomeButton1 />
       <HomeButton2 />
       <AddPlayer />

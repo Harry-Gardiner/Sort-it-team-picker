@@ -69,6 +69,7 @@ class PlayerInputForm extends Component {
                         disabled={requiredNumOfPlayers ? true : false}
                         maxLength="25"
                         minLength="2"
+                        required
                     />
                 </div>
                 <div>
@@ -85,6 +86,7 @@ class PlayerInputForm extends Component {
                         value={playerSkill}
                         step="1" // + / - each movement
                         onChange={this.handleSkill}
+                        required
                     />
                 </div>
 
