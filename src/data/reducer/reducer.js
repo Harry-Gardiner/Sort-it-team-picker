@@ -1,6 +1,6 @@
 // imports
 import initial from '../initial';
-import { randomiseArray, generateTeams, balanceTeams } from '../../Logic/logic';
+import { randomiseArray, generateTeams, balanceTeams } from '../../Logic/generateTeams';
 
 
 // update functions
