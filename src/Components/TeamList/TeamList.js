@@ -1,7 +1,7 @@
-const TeamList = ({ teamPlayers, teamName }) => { // both teams will be passed into the same template, so prop is generic.
+const TeamList = ({ teamPlayers, teamName, homeOrAway }) => { // both teams will be passed into the same template, so prop is generic.
     return (
         <div>
-            <h3>{teamName}</h3>
+            <h3>{teamName} <span>{homeOrAway}</span></h3>
             <ul>
                 {
                     teamPlayers.map((player, index) => {
