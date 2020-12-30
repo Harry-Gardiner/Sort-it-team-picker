@@ -1,7 +1,7 @@
 // imports
 import initial from '../initial';
-import { randomiseArray, generateTeams, balanceTeams } from '../../Logic/logic';
-
+import { randomiseArray, generateTeams, balanceTeams } from '../../Logic/generateTeams';
+import { getScores, setFavouriteTeam } from '../../Logic/bookiesFavourite';
 
 // update functions
 const addPlayer = (state, { data }) => {
@@ -102,6 +102,28 @@ const setTeamNames = (state, { teamNames }) => {
     }
 }
 
+const setBookiesFavourtire = (state) => {
+    const { team1Players, team2Players, team1Home } = state;
+
+    let skillScores = getScores(team1Home, team1Players, team2Players);
+
+    let bookiesFavTeam = setFavouriteTeam(skillScores);
+
+    let favTeamSkill = bookiesFavTeam === "team1" ? skillScores.team1Skill : skillScores.team2Skill;
+
+    let otherTeamSkill = bookiesFavTeam === "team1" ? skillScores.team2Skill : skillScores.team1Skill;
+
+    return {
+        ...state,
+        bookiesFavouriteInfo: {
+            bookiesFavTeam,
+            favTeamSkill,
+            otherTeamSkill,
+        },
+        showBookiesFavourite: true,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -114,6 +136,7 @@ const reducer = (state, action) => {
         case "CREATE_BALANCED_TEAMS": return createBalancedTeams(state);
         case "TOGGLE_HOME_BUTTONS": return toggleHomeTeam(state);
         case "SET_TEAM_NAMES": return setTeamNames(state, action);
+        case "CREATE_BOOKIES_FAVOURITE": return setBookiesFavourtire(state);
         case "RESET": return initial;
         // default
         default: return state;

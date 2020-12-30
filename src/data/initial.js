@@ -16,6 +16,9 @@ const initial = {
 
     team1Name: "",
     team2Name: "",
+
+    bookiesFavouriteInfo: {},
+    showBookiesFavourite: false,
 };
 
 export default initial;
