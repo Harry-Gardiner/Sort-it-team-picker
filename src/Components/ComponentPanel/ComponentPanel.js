@@ -1,10 +1,10 @@
+// imports
 import AddPlayer from '../PlayerInput'
 import PlayerList from '../PlayerList'
 import CreateTeams from '../CreateTeams';
 import CreateBalancedTeams from '../CreateBalancedTeams';
 import NumberOfPlayers from '../NumberOfPlayers';
 import TeamsConfirmed from '../TeamsConfirmed';
-
 
 // Top component
 const ComponentPanel = ({ teamsPicked }) => {
