@@ -14,11 +14,12 @@ import HomeButton1 from './Components/HomeTeam/Team1Button';
 import HomeButton2 from './Components/HomeTeam/Team2Button';
 import InputTeamNames from './Components/TeamNameInput';
 import BookiesFavourite from './Components/BookiesFavourite';
+import Header from './Components/Header/Header';
 // Top component
 const App = () => {
   return (
     <>
-      <h1>Sorted!</h1>
+      <Header />
       <NumberOfPlayers />
       <InputTeamNames />
       <BookiesFavourite />
