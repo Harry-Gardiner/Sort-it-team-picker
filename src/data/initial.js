@@ -5,6 +5,7 @@ const initial = {
     requiredNumOfPlayers: false,
 
     teamsPicked: false,
+    teamNamesConfirmed: false,
 
     team1Players: [],
     team2Players: [],
