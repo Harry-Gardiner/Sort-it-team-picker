@@ -4,6 +4,7 @@ const HomeTeamButton = ({ home, handleClick }) => {
         <div className="home-container">
             <button
                 onClick={handleClick}
+                type="button"
             >
                 {home ? "Home" : "Away"}
             </button>
