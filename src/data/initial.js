@@ -5,13 +5,13 @@ const initial = {
     requiredNumOfPlayers: false,
 
     teamsPicked: false,
-    teamNamesConfirmed: false,
+    teamsConfirmed: false,
 
     team1Players: [],
     team2Players: [],
 
-    team1Colour: "",
-    team2Colour: "",
+    team1Colour: "#000000",
+    team2Colour: "#000000",
 
     team1Home: true,
 

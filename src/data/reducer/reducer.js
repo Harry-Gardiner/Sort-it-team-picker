@@ -99,7 +99,7 @@ const setTeamNames = (state, { teamNames }) => {
         ...state,
         team1Name: teamNames.team1Name,
         team2Name: teamNames.team2Name,
-        teamNamesConfirmed: true,
+        teamsConfirmed: true,
     }
 }
 
