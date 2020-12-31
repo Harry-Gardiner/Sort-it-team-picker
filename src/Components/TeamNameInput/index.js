@@ -1,7 +1,15 @@
 // imports
 import { connect } from 'react-redux';
-import TeamNameInput from './TeamNameInput';
+import TeamsConfirmed from './TeamsConfirmed';
 import { setTeamName } from '../../data/actions';
+
+const mapStateToProps = ({ teamsConfirmed, team1Name, team2Name }) => {
+    return {
+        teamsConfirmed,
+        loggedTeam1Name: team1Name,
+        loggedTeam2Name: team2Name,
+    }
+};
 
 // Dispatch 
 const mapDispatchToProps = dispatch => {
@@ -12,4 +20,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(TeamNameInput)
+export default connect(mapStateToProps, mapDispatchToProps)(TeamsConfirmed)
