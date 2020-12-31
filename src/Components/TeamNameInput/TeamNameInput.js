@@ -1,5 +1,7 @@
 // imports
 import { Component } from 'react';
+import HomeButton1 from '../HomeTeam/Team1Button';
+import HomeButton2 from '../HomeTeam/Team2Button';
 
 // class based component - state required
 class TeamNameInput extends Component {
@@ -48,6 +50,7 @@ class TeamNameInput extends Component {
 
     render() {
         const { team1Name, team2Name } = this.state;
+        const { teamNamesConfirmed, loggedTeam1Name, loggedTeam2Name } = this.props;
 
         return (
             <form
@@ -58,34 +61,43 @@ class TeamNameInput extends Component {
                         Team 1 Name:
                     </label>
 
-                    <input
-                        type="text"
-                        id="Team 1 name"
-                        name="Team 1 name"
-                        value={team1Name}
-                        onChange={this.handleteam1Name}
-                        maxLength="25"
-                        minLength="2"
-                        placeholder="Team 1"
-                        required
-                    />
+                    {!teamNamesConfirmed ?
+                        <input
+                            type="text"
+                            id="Team 1 name"
+                            name="Team 1 name"
+                            value={team1Name}
+                            onChange={this.handleteam1Name}
+                            maxLength="25"
+                            minLength="2"
+                            placeholder="Team 1"
+                            required
+                        /> :
+                        <h3>{loggedTeam1Name}</h3>
+                    }
+                    <HomeButton1 />
                 </div>
+
                 <div>
                     <label htmlFor="Team 2 name">
                         Team 2 Name:
                     </label>
 
-                    <input
-                        type="text"
-                        id="Team 2 name"
-                        name="Team 2 name"
-                        value={team2Name}
-                        onChange={this.handleteam2Name}
-                        maxLength="25"
-                        minLength="2"
-                        placeholder="Team 2"
-                        required
-                    />
+                    {!teamNamesConfirmed ?
+                        <input
+                            type="text"
+                            id="Team 2 name"
+                            name="Team 2 name"
+                            value={team2Name}
+                            onChange={this.handleteam2Name}
+                            maxLength="25"
+                            minLength="2"
+                            placeholder="Team 2"
+                            required
+                        /> :
+                        <h3>{loggedTeam2Name}</h3>
+                    }
+                    <HomeButton2 />
                 </div>
 
 
