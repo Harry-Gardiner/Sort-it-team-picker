@@ -103,6 +103,7 @@ class TeamNameInput extends Component {
 
                 <button
                     type="submit"
+                    disabled={teamNamesConfirmed ? true : false}
                 >
                     Confirm Team Names
                 </button>
