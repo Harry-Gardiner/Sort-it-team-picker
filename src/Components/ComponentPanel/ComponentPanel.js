@@ -9,7 +9,7 @@ import TeamsConfirmed from '../TeamsConfirmed';
 // Top component
 const ComponentPanel = ({ teamsPicked }) => {
     return (
-        <main>
+        <>
             { !teamsPicked ?
                 // If teams are not yet picked render initial selection page - number of players per team, input players, create random teams, create balanced teams 
                 <>
@@ -24,8 +24,7 @@ const ComponentPanel = ({ teamsPicked }) => {
                     <TeamsConfirmed />
                 </>
             }
-            {/* Will add a final component page displaying teams and kit, also bookies favourites */}
-        </main>
+        </>
     )
 }
 
