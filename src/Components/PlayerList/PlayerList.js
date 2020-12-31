@@ -9,7 +9,7 @@ const PlayerList = ({ players, handleClick }) => {
                             className="capitalize"
                         >
                             {player.name}
-                            <span style={{ position: "absolute", right: "2rem" }}>skill: {player.skill}</span>
+                            <span>skill: {player.skill}</span>
                         </li>
                         <button
                             onClick={() => handleClick(index)}

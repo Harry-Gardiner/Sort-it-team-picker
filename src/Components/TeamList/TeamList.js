@@ -10,7 +10,7 @@ const TeamList = ({ teamPlayers }) => { // both teams will be passed into the sa
                                 className="capitalize"
                             >
                                 {player.name}
-                                <span style={{ position: "absolute", right: "2rem" }}>skill: {player.skill}</span>
+                                <span>skill: {player.skill}</span>
                             </li>
                         )
                     })

@@ -1,0 +1,13 @@
+/* Colours */
+:root {
+	--light-gray: #cfcfcfff;
+	--raisin-black: #242331ff;
+	--gunmetal-blue: #0f3343;
+	--maximum-green: #548c2fff;
+	--forest-green-traditional: #104911ff;
+	--fontSize: 1rem;
+}
+
+* {
+	box-sizing: border-box;
+}

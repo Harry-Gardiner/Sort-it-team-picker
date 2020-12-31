@@ -1,0 +1,24 @@
+/* imported fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Bebas Neue", cursive;
+	letter-spacing: 0.3rem;
+}
+
+form,
+li,
+button,
+label,
+input,
+p {
+	font-family: "Roboto", sans-serif;
+	font-size: var(--fontSize);
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
