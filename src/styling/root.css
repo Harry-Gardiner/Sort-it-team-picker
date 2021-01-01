@@ -4,8 +4,8 @@
 	--light-gray: #cfcfcfff;
 	--raisin-black: #242331ff;
 	--gunmetal-blue: #0f3343;
-	--maximum-green: #548c2fff;
-	--forest-green-traditional: #104911ff;
+	--maximum-green: rgb(96, 143, 65);
+	--forest-green-traditional: rgb(119, 209, 120);
 	--fontSize: 1rem;
 	--border-radius: 8px;
 }

@@ -3,6 +3,7 @@
 @import "./styling//background.css";
 @import "./styling/header.css";
 @import "./styling/card.css";
+@import "./styling/buttons.css";
 
 /* components */
 @import "./styling/numberOfPlayers.css";
