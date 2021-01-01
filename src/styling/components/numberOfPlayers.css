@@ -7,7 +7,7 @@
 }
 
 .teamSize .arrow {
-	font-size: 5rem;
+	font-size: 4rem;
 	border: none;
 	background: none;
 	padding: 0;
@@ -21,7 +21,7 @@
 }
 
 .teamSize p {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: bold;
-	padding-top: 1rem;
+	padding-top: 0.5rem;
 }
