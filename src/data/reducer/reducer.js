@@ -125,6 +125,13 @@ const setBookiesFavourtire = (state) => {
     }
 }
 
+const toggleInstructions = (state) => {
+    return {
+        ...state,
+        showInstructions: !state.showInstructions,
+    }
+}
+
 // Main reducer 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -138,6 +145,7 @@ const reducer = (state, action) => {
         case "TOGGLE_HOME_BUTTONS": return toggleHomeTeam(state);
         case "SET_TEAM_NAMES": return setTeamNames(state, action);
         case "CREATE_BOOKIES_FAVOURITE": return setBookiesFavourtire(state);
+        case "TOGGLE_INSTRUCTIONS": return toggleInstructions(state);
         case "RESET": return initial;
         // default
         default: return state;

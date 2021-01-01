@@ -4,6 +4,8 @@ const initial = {
     numberOfPlayers: 5,
     requiredNumOfPlayers: false,
 
+    showInstructions: false,
+
     teamsPicked: false,
     teamsConfirmed: false,
 

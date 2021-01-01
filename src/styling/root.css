@@ -45,6 +45,12 @@ label {
 	padding: 0 1rem;
 }
 
+@media screen and (max-width: 300px) {
+	.flexList {
+		flex-direction: column;
+	}
+}
+
 .flexList p {
 	position: relative;
 	top: 0.5rem;

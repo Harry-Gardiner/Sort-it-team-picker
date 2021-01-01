@@ -1,0 +1,5 @@
+.instructions {
+	color: var(--raisin-black);
+	background-color: var(--light-gray);
+	padding: 2rem;
+}

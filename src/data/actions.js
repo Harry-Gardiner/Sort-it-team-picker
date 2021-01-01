@@ -70,4 +70,10 @@ export const createBookiesFavourite = () => {
     return {
         type: "CREATE_BOOKIES_FAVOURITE",
     }
-}
+};
+
+export const toggleInstructions = () => {
+    return {
+        type: "TOGGLE_INSTRUCTIONS",
+    }
+};

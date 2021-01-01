@@ -67,7 +67,7 @@ class TeamNameInput extends Component {
                         <div className="topRight">
                             <HomeButton1 />
                             <p className="homeAwayText">
-                                Toggle
+                                (Toggle)
                             </p>
                         </div>
                         <label

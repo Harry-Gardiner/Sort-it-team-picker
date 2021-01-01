@@ -1,5 +1,5 @@
 // imports
-import Header from '../Header/Header';
+import Header from '../Header';
 import ComponentPanel from '../ComponentPanel';
 import TeamDisplay from '../TeamsDisplay/index';
 
