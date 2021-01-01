@@ -1,9 +1,10 @@
 @import "./styling/root.css";
 @import "./styling/typography.css";
 @import "./styling//background.css";
-@import "./styling/header.css";
 @import "./styling/card.css";
 @import "./styling/buttons.css";
 
 /* components */
-@import "./styling/numberOfPlayers.css";
+@import "./styling/components/numberOfPlayers.css";
+@import "./styling/components/header.css";
+@import "./styling/components/playerInput.css";

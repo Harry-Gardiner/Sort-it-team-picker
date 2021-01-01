@@ -54,49 +54,53 @@ class PlayerInputForm extends Component {
         return (
             <form
                 onSubmit={this.handleSubmit}
+                className="card playerInput"
             >
-                <div>
-                    <label htmlFor="player name">
-                        Input Player Name:
-                    </label>
+                <h3>Input Player</h3>
+                <div className="flex columnFlex">
+                    <div >
+                        <label htmlFor="player name">
+                            Input Player Name:
+                        </label>
 
-                    <input
-                        type="text"
-                        id="player name"
-                        name="player name"
-                        value={playerName}
-                        onChange={this.handleName}
-                        disabled={requiredNumOfPlayers ? true : false}
-                        maxLength="25"
-                        minLength="2"
-                        required
-                    />
+                        <input
+                            type="text"
+                            id="player name"
+                            name="player name"
+                            value={playerName}
+                            onChange={this.handleName}
+                            disabled={requiredNumOfPlayers ? true : false}
+                            maxLength="25"
+                            minLength="2"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="player skill">
+                            Select Player Skill:
+                        </label>
+
+                        <input
+                            type="range"
+                            id="points"
+                            name="points"
+                            min="1"
+                            max="5"
+                            value={playerSkill}
+                            step="1" // + / - each movement
+                            onChange={this.handleSkill}
+                            required
+                        />
+                    </div>
+
+                    {requiredNumOfPlayers ? null :
+                        <button
+                            type="submit"
+                        >
+                            Add Player
+                        </button>
+                    }
                 </div>
-                <div>
-                    <label htmlFor="player skill">
-                        Select Player Skill:
-                    </label>
-
-                    <input
-                        type="range"
-                        id="points"
-                        name="points"
-                        min="1"
-                        max="5"
-                        value={playerSkill}
-                        step="1" // + / - each movement
-                        onChange={this.handleSkill}
-                        required
-                    />
-                </div>
-
-                { requiredNumOfPlayers ? null :
-                    <button
-                        type="submit"
-                    >
-                        Add Player
-                    </button>
-                }
             </form>
         )
     }

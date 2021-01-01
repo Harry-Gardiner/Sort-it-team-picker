@@ -6,11 +6,6 @@
 	font-size: 2rem;
 }
 
-.teamSize .flex {
-	display: flex;
-	justify-content: space-around;
-}
-
 .teamSize .arrow {
 	font-size: 5rem;
 	border: none;

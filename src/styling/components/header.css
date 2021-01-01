@@ -1,5 +1,5 @@
 .header {
-	color: var(--white);
+	color: var(--light-gray);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -23,7 +23,7 @@
 .header nav {
 	display: flex;
 	height: 2.5rem;
-	background-color: var(--maximum-green);
+	background-color: var(--light-gray);
 }
 
 .header nav button {

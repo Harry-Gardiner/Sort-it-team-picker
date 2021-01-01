@@ -19,10 +19,14 @@ label,
 input,
 p {
 	font-family: "Roboto", sans-serif;
-	font-size: var(--fontSize);
+	font-size: var(--fontlarger);
 	color: var(--raisin-black);
 }
 
 .capitalize {
 	text-transform: capitalize;
+}
+
+h3 {
+	font-size: 2rem;
 }

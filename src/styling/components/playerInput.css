@@ -1,0 +1,19 @@
+@media screen and (max-width: 950px) {
+	.columnFlex {
+		width: 85%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.playerInput h3 {
+	display: block;
+}
+
+.playerInput div {
+	padding-top: 0.5rem;
+}
+
+.playerInput button {
+	width: 10rem;
+}

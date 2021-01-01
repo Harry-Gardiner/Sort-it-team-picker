@@ -9,7 +9,7 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 950px) {
 	.card {
 		width: 85%;
 	}

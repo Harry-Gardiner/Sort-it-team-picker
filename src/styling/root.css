@@ -7,6 +7,7 @@
 	--maximum-green: rgb(96, 143, 65);
 	--forest-green-traditional: rgb(119, 209, 120);
 	--fontSize: 1rem;
+	--fontlarger: 1.2rem;
 	--border-radius: 8px;
 }
 
@@ -17,4 +18,22 @@
 body {
 	margin: 0;
 	padding: 0;
+}
+
+input[type="text"] {
+	border: 2px solid var(--gunmetal-blue);
+	padding: 12px 20px;
+	margin: 8px 0;
+	width: 90%;
+	font-size: 1.5rem;
+}
+
+label {
+	font-size: 3rem;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
