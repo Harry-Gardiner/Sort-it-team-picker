@@ -1,0 +1,30 @@
+.header {
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: var(--gunmetal-blue);
+}
+
+.header h1 {
+	font-size: 4rem;
+	letter-spacing: 0.3rem;
+	margin: 0;
+	height: 4rem;
+}
+
+.header p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+}
+
+.header nav {
+	display: flex;
+	height: 2.5rem;
+	background-color: var(--maximum-green);
+}
+
+.header nav button {
+	margin: 0.2rem;
+}

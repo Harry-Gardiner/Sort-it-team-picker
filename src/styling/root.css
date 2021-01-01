@@ -1,5 +1,6 @@
 /* Colours */
 :root {
+	--white: #fff;
 	--light-gray: #cfcfcfff;
 	--raisin-black: #242331ff;
 	--gunmetal-blue: #0f3343;
@@ -10,4 +11,9 @@
 
 * {
 	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
