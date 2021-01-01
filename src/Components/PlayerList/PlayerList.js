@@ -11,7 +11,6 @@ const PlayerList = ({ players, handleClick }) => {
                     return (
                         <div key={index} className="flex">
                             <li
-                                key={index}
                                 className="capitalize list-group-item flexList"
                             >
                                 <p>

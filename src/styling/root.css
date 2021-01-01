@@ -42,6 +42,12 @@ label {
 	justify-content: space-between;
 	align-items: center;
 	width: 90%;
+	padding: 0 1rem;
+}
+
+.flexList p {
+	position: relative;
+	top: 0.5rem;
 }
 
 .flexColumn {
@@ -64,4 +70,8 @@ i {
 
 .minorPadding {
 	padding: 1rem 0;
+}
+
+.minorPaddingBottom {
+	padding-bottom: 1rem;
 }

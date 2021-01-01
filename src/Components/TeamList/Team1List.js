@@ -3,11 +3,10 @@ import { connect } from 'react-redux';
 import TeamList from './TeamList';
 
 // state
-const mapStateToProps = ({ team1Players, team1Name, team1Home }) => {
+const mapStateToProps = ({ team1Players, team1Colour }) => {
     return {
         teamPlayers: team1Players,
-        teamName: team1Name,
-        homeOrAway: team1Home ? "(Home)" : "(Away)"
+        teamColour: team1Colour,
     }
 }
 

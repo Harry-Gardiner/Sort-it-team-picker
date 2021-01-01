@@ -9,6 +9,20 @@
 	text-align: center;
 }
 
+.title {
+	border: 0.3rem solid var(--gunmetal-blue);
+}
+
+.bookies {
+	width: 60%;
+	border: 0.2rem solid var(--gunmetal-blue);
+	margin: 1rem auto;
+	padding: 0.5rem 2rem;
+	border-radius: var(--border-radius);
+	opacity: 0.96;
+	text-align: center;
+}
+
 @media screen and (max-width: 950px) {
 	.card {
 		width: 85%;

@@ -61,7 +61,7 @@ class TeamNameInput extends Component {
                 <form
                     onSubmit={this.handleSubmit}
                 >
-                    <h2 className="card">Customise Teams</h2>
+                    <h2 className="card title">Customise Teams</h2>
                     <div className="card ">
                         <h3 className="textAlignStart">Team 1</h3>
                         <div className="topRight">

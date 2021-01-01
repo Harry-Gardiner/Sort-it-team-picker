@@ -6,19 +6,42 @@ import BookiesFavourite from '../BookiesFavourite/index';
 
 const TeamsDisplay = ({ team1Colour, team2Colour, team1Name, team2Name, team1Home, team2Home }) => {
     return (
-        <div>
-            <div>
-                <h3>{team1Name} <span>{team1Home}</span></h3>
-                <Jersey style={{ width: "5rem" }} fill={team1Colour} />
-                <Team1List />
+        <>
+            <div className="card title">
+                <h2>Pre-match information</h2>
             </div>
-            <div>
-                <h3>{team2Name} <span>{team2Home}</span></h3>
-                <Jersey style={{ width: "5rem" }} fill={team2Colour} />
-                <Team2List />
+            <div className="card">
+                <div className="minorPadding">
+                    <h3
+                        className="minorPaddingBottom"
+                    >
+                        {team1Name}
+                        <span>{team1Home}</span>
+                    </h3>
+                    <Jersey
+                        style={{ width: "5rem" }}
+                        fill={team1Colour}
+                        className="minorPaddingBottom"
+                    />
+                    <Team1List />
+                </div>
+                <div className="minorPadding">
+                    <h3
+                        className="minorPaddingBottom"
+                    >
+                        {team2Name}
+                        <span>{team2Home}</span>
+                    </h3>
+                    <Jersey
+                        style={{ width: "5rem" }}
+                        fill={team2Colour}
+                        className="minorPaddingBottom"
+                    />
+                    <Team2List />
+                </div>
+                <BookiesFavourite />
             </div>
-            <BookiesFavourite />
-        </div>
+        </>
     )
 };
 

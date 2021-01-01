@@ -5,19 +5,18 @@ const BookiesFavourite = ({ team1Name, team2Name, teamsPicked, bookiesFavouriteI
     return (
         <div>
             { teamsPicked === false ? null :
-                <div className="dropdown">
+                <div>
                     <button
-                        className="dropbtn"
                         onClick={handleClick}
                     >
                         Bookies Favourtie
                     </button>
                     {showBookiesFavourite === false ? null :
-                        <div className="dropdown-content">
-                            <p>{bookiesFavTeam === "team1" ? team1Name : team2Name} are tipped to win.</p>
-                            <p>{team1Name} skill total: {bookiesFavTeam === "team1" ? favTeamSkill : otherTeamSkill}{team1Home ? "*" : ""}</p>
-                            <p>{team2Name} skill total: {bookiesFavTeam === "team2" ? favTeamSkill : otherTeamSkill}{!team1Home ? "*" : ""}</p>
-                            <p>*home team advantage of +20% applied</p>
+                        <div className="bookies">
+                            <p>{bookiesFavTeam === "team1" ? team1Name : team2Name} are tipped to win <i className="fas fa-trophy"></i></p>
+                            <p className="smallText">{team1Name} skill total: {bookiesFavTeam === "team1" ? favTeamSkill : otherTeamSkill}{team1Home ? "*" : ""}</p>
+                            <p className="smallText">{team2Name} skill total: {bookiesFavTeam === "team2" ? favTeamSkill : otherTeamSkill}{!team1Home ? "*" : ""}</p>
+                            <p className="vSmallText">*home team advantage of +20% applied</p>
                         </div>
                     }
                 </div>
