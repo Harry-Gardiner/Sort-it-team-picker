@@ -1,15 +1,16 @@
 const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
     return (
-        <div>
-            <p>Set team size:</p>
+        <div className="card">
+            <h3>Set team size:</h3>
 
-            <p>{numberOfPlayers}-aside Team Picker</p>
 
             <button
                 onClick={handleAdd}
             >
                 +
             </button>
+
+            <p>{numberOfPlayers}</p>
 
             <button
                 onClick={handleMinus}

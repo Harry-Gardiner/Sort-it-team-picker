@@ -1,8 +1,15 @@
 .card {
-	background: rgb(4, 16, 38);
-	background: linear-gradient(
-		347deg,
-		rgba(4, 16, 38, 1) 2%,
-		rgba(52, 89, 45, 1) 12%
-	);
+	background: var(--light-gray);
+	width: 65%;
+	color: var(--raisin-black);
+	margin: 2rem auto;
+	padding: 1rem 2rem;
+	border-radius: var(--border-radius);
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+	.card {
+		width: 85%;
+	}
 }

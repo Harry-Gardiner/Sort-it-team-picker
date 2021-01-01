@@ -6,12 +6,14 @@ import TeamDisplay from '../TeamsDisplay/index';
 // Top component
 const App = ({ teamsConfirmed }) => {
   return (
-    <main>
+    <>
       <Header />
-      { !teamsConfirmed ?
-        <ComponentPanel /> : <TeamDisplay />
-      }
-    </main>
+      <main className="background">
+        {!teamsConfirmed ?
+          <ComponentPanel /> : <TeamDisplay />
+        }
+      </main>
+    </>
   )
 }
 
