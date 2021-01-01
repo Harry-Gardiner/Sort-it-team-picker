@@ -1,3 +1,7 @@
+//imports
+import CreateTeams from '../CreateTeams';
+import CreateBalancedTeams from '../CreateBalancedTeams';
+
 const PlayerList = ({ players, handleClick }) => {
     return (
         <div className="card">
@@ -25,6 +29,10 @@ const PlayerList = ({ players, handleClick }) => {
                     )
                 })}
             </ul>
+            <div>
+                <CreateTeams />
+                <CreateBalancedTeams />
+            </div>
         </div>
     )
 }

@@ -3,9 +3,10 @@ const CreateBalancedTeams = ({ handleClick, requiredNumOfPlayers, teamsPicked })
         <button
             disabled={requiredNumOfPlayers ? false : true}
             onClick={handleClick}
-            style={{ visibility: teamsPicked ? "hidden" : "visible" }}
+            // style={{ visibility: teamsPicked ? "hidden" : "visible" }}
+            className={requiredNumOfPlayers ? null : "button-disabled"}
         >
-            Balanced Teams
+            Create Balanced Teams
         </button>
     )
 }
