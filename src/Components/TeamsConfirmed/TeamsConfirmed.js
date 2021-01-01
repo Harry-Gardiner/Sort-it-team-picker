@@ -57,13 +57,22 @@ class TeamNameInput extends Component {
         const { teamsConfirmed, loggedTeam1Name, loggedTeam2Name } = this.props;
 
         return (
-            <div>
-                <h2>Customise Teams</h2>
+            <div className="customTeams">
                 <form
                     onSubmit={this.handleSubmit}
                 >
-                    <div>
-                        <label htmlFor="Team 1 name">
+                    <h2 className="card">Customise Teams</h2>
+                    <div className="card ">
+                        <h3 className="textAlignStart">Team 1</h3>
+                        <div className="topRight">
+                            <HomeButton1 />
+                            <p className="homeAwayText">
+                                Toggle
+                            </p>
+                        </div>
+                        <label
+                            htmlFor="Team 1 name" className="textAlignStart"
+                        >
                             Team 1 Name:
                         </label>
 
@@ -81,13 +90,18 @@ class TeamNameInput extends Component {
                             /> :
                             <h3>{loggedTeam1Name}</h3>
                         }
-                        <HomeButton1 />
                         <Team1Jersey />
                         <Team1Colour />
                     </div>
 
-                    <div>
-                        <label htmlFor="Team 2 name">
+                    <div className="card">
+                        <h3 className="textAlignStart">Team 2</h3>
+                        <div className="topRight">
+                            <HomeButton2 />
+                        </div>
+                        <label
+                            htmlFor="Team 2 name" className="textAlignStart"
+                        >
                             Team 2 Name:
                         </label>
 
@@ -105,18 +119,19 @@ class TeamNameInput extends Component {
                             /> :
                             <h3>{loggedTeam2Name}</h3>
                         }
-                        <HomeButton2 />
                         <Team2Jersey />
                         <Team2Colour />
                     </div>
+                    <div className="card">
+                        <button
+                            type="submit"
+                            disabled={teamsConfirmed ? true : false}
+                        >
+                            Confirm Team Details
+                        </button>
+                    </div>
 
 
-                    <button
-                        type="submit"
-                        disabled={teamsConfirmed ? true : false}
-                    >
-                        Confirm Team Details
-                    </button>
 
                 </form>
             </div>

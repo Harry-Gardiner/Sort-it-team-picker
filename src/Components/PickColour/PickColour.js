@@ -10,7 +10,7 @@ const PickColour = ({ handleColour }) => {
 
     return (
 
-        <div>
+        <div className="flex">
             <p>Pick Team Colour:</p>
             <CirclePicker
                 colors={["#f44336", "#2196f3", "#009688", "#ff9800", "#607d8b", "#000000", "#68228B"]}

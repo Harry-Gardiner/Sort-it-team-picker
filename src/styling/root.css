@@ -23,7 +23,6 @@ body {
 input[type="text"] {
 	border: 2px solid var(--gunmetal-blue);
 	padding: 0 1rem;
-	margin: 8px 0;
 	width: 90%;
 	font-size: 1.5rem;
 }
@@ -45,6 +44,11 @@ label {
 	width: 90%;
 }
 
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
 ul,
 ol {
 	list-style: none;
@@ -52,4 +56,12 @@ ol {
 
 i {
 	padding: 0 0.5rem;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.minorPadding {
+	padding: 1rem 0;
 }

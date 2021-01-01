@@ -8,7 +8,7 @@ const TeamJersey = ({ colour }) => {
 
 
     return (
-        <div style={{ display: "flex" }}>
+        <div className="minorPadding">
             <Jersey style={{ width: "5rem" }} fill={colour} />
             <Short style={{ width: "4.5rem" }} fill={colour} />
             <Boot style={{ width: "3rem" }} fill={colour} />

@@ -21,7 +21,6 @@ p {
 	font-family: "Roboto", sans-serif;
 	font-size: var(--fontlarger);
 	color: var(--raisin-black);
-	margin: 0;
 }
 
 .capitalize {
@@ -30,4 +29,8 @@ p {
 
 h3 {
 	font-size: 2rem;
+}
+
+.marginCenter {
+	margin: 0 auto;
 }

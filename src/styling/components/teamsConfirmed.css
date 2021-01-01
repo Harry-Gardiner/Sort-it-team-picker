@@ -1,0 +1,43 @@
+.customTeams form {
+	margin-top: 2rem;
+}
+
+.customTeams form div > *:not(:last-child) {
+	margin-bottom: 0.5rem;
+}
+
+.textAlignStart {
+	text-align: start;
+}
+
+.customTeams input {
+	width: 100%;
+}
+
+.topRight {
+	position: absolute;
+	top: 0rem;
+	right: 1rem;
+}
+
+.topRight button {
+	margin-top: 1.1rem;
+	width: 5rem;
+}
+
+.homeAwayText {
+	font-size: 0.8rem;
+	position: absolute;
+	left: 2.1rem;
+	top: 4rem;
+}
+
+@media screen and (max-width: 380px) {
+	.topRight {
+		position: static;
+	}
+
+	.homeAwayText {
+		position: static;
+	}
+}
