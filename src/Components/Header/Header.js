@@ -3,11 +3,13 @@ import ResetBtn from '../Reset';
 
 const Header = () => {
     return (
-        <header className="header ">
+        <header className="header">
             <h1>Sort-it</h1>
             <p>Team selector</p>
             <nav>
-                <ResetBtn />
+                <div className="wrapper">
+                    <ResetBtn />
+                </div>
             </nav>
         </header>
     )
