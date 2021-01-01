@@ -7,12 +7,14 @@ import TeamDisplay from '../TeamsDisplay/index';
 const App = ({ teamsConfirmed }) => {
   return (
     <>
-      <Header />
-      <main className="background">
-        {!teamsConfirmed ?
-          <ComponentPanel /> : <TeamDisplay />
-        }
-      </main>
+      <div className="background">
+        <Header />
+        <main>
+          {!teamsConfirmed ?
+            <ComponentPanel /> : <TeamDisplay />
+          }
+        </main>
+      </div>
     </>
   )
 }
