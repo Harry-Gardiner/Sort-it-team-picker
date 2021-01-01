@@ -49,3 +49,7 @@ ul,
 ol {
 	list-style: none;
 }
+
+i {
+	padding: 0 0.5rem;
+}

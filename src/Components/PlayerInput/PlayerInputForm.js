@@ -56,7 +56,7 @@ class PlayerInputForm extends Component {
                 onSubmit={this.handleSubmit}
                 className="card playerInput"
             >
-                <h3>Input Player</h3>
+                <h3>Input Player <i className="fas fa-user-plus"></i></h3>
                 <div className="flex columnFlex">
                     <div >
                         <label htmlFor="player name">

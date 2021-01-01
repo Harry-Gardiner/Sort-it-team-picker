@@ -8,3 +8,10 @@
 	height: 2rem;
 	padding: 0;
 }
+
+.smallIcon {
+	font-size: 0.8rem;
+	position: relative;
+	top: -2px;
+	left: -1px;
+}
