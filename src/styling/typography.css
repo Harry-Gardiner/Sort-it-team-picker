@@ -20,6 +20,7 @@ input,
 p {
 	font-family: "Roboto", sans-serif;
 	font-size: var(--fontSize);
+	color: var(--raisin-black);
 }
 
 .capitalize {

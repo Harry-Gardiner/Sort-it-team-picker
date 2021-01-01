@@ -1,0 +1,30 @@
+.teamSize {
+	padding: 1rem;
+}
+
+.teamSize h3 {
+	font-size: 2rem;
+}
+
+.teamSize .flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.teamSize .arrow {
+	font-size: 5rem;
+	border: none;
+	background: none;
+	padding: 0;
+	outline: none;
+	transition: all 0.1s ease-in-out;
+}
+
+.teamSize .arrow:hover {
+	transform: scale(1.2);
+}
+
+.teamSize p {
+	font-size: 2rem;
+	font-weight: bold;
+}
