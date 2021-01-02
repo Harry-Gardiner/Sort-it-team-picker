@@ -87,6 +87,7 @@ class TeamNameInput extends Component {
                                 minLength="2"
                                 placeholder="Team 1"
                                 required
+                                autoFocus
                             /> :
                             <h3>{loggedTeam1Name}</h3>
                         }

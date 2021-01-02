@@ -73,6 +73,11 @@ class PlayerInputForm extends Component {
                             maxLength="25"
                             minLength="2"
                             required
+                            ref={function (input) {
+                                if (input != null) {
+                                    input.focus();
+                                }
+                            }}
                         />
                     </div>
                     <div>
