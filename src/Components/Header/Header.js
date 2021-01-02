@@ -6,7 +6,7 @@ import Instructions from '../Instructions/Instructions';
 const Header = ({ showInstructions }) => {
     return (
         <>
-            <header className="header">
+            <header id="top" className="header">
                 <h1>Sort-it</h1>
                 <p>Team selector</p>
                 <nav>

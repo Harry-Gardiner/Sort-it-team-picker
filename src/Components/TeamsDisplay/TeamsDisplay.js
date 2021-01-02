@@ -1,10 +1,19 @@
 // imports
+import React, { useEffect } from 'react';
 import { ReactComponent as Jersey } from '../../assets/icons/jersey.svg';
 import Team1List from '../TeamList/Team1List';
 import Team2List from '../TeamList/Team2List';
 import BookiesFavourite from '../BookiesFavourite/index';
 
 const TeamsDisplay = ({ team1Colour, team2Colour, team1Name, team2Name, team1Home, team2Home }) => {
+    useEffect(() => {
+        const body = document.getElementById('top');
+
+        body.scrollIntoView({
+            behavior: 'smooth'
+        }, 500)
+
+    }, []);
     return (
         <>
             <div className="card title">
