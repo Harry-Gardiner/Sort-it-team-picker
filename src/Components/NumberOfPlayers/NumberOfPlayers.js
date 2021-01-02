@@ -6,8 +6,8 @@ const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
             <div className="flex">
                 <button
                     onClick={handleMinus}
-                    disabled={numberOfPlayers <= 2} // cant go below 2-aside, i.e. 4 players in total
-                    className="arrow"
+                    disabled={numberOfPlayers <= 3} // cant go below 3-aside, i.e. 6 players in total
+                    className={numberOfPlayers <= 3 ? "arrow button-disabled" : "arrow"}
                 >
                     {'<'}
                 </button>
