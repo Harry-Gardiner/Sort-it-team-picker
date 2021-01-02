@@ -1,13 +1,4 @@
-@font-face {
-	font-family: "Bebas Neue";
-	src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
-}
-
+/* Root CSS, repeatable styling that will be used through application. Also a number of resets*/
 :root {
 	--white: #fff;
 	--light-gray: #cfcfcfff;
@@ -29,6 +20,10 @@ body {
 	padding: 0;
 }
 
+ul,
+ol {
+	list-style: none;
+}
 input[type="text"] {
 	border: 2px solid var(--gunmetal-blue);
 	padding: 0 1rem;
@@ -60,6 +55,7 @@ label {
 	padding: 0 1rem;
 }
 
+/* tidy up li items when screen size is mobile. */
 @media screen and (max-width: 450px) {
 	.flexLi {
 		display: block;
@@ -79,11 +75,6 @@ label {
 .flexColumn {
 	display: flex;
 	flex-direction: column;
-}
-
-ul,
-ol {
-	list-style: none;
 }
 
 i {

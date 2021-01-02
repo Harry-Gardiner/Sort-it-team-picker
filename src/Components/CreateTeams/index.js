@@ -4,18 +4,17 @@ import CreateTeams from './CreateTeams';
 import { createTeams } from '../../data/actions';
 
 // state
-const mapStateToProps = ({ requiredNumOfPlayers, teamsPicked }) => {
+const mapStateToProps = ({ requiredNumOfPlayers }) => {
     return {
         requiredNumOfPlayers: requiredNumOfPlayers,
-        teamsPicked: teamsPicked,
-    }
-}
+    };
+};
 
 // dispatch
 const mapDispatchToProps = dispatch => {
     return {
         handleClick: () => { dispatch(createTeams()) }
-    }
-}
+    };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateTeams);

@@ -1,3 +1,4 @@
+/* Generic card styling for componets/grouped components */
 .card {
 	background: var(--light-gray);
 	width: 55%;
@@ -9,10 +10,12 @@
 	text-align: center;
 }
 
+/* Specific wrapper for title */
 .title {
 	border: 0.3rem solid var(--gunmetal-blue);
 }
 
+/* Specific card wrapper for  */
 .bookies {
 	width: 80%;
 	border: 0.2rem solid var(--gunmetal-blue);
@@ -23,6 +26,7 @@
 	text-align: center;
 }
 
+/* Card size increased on small screens for better UI experience */
 @media screen and (max-width: 950px) {
 	.card {
 		width: 85%;
