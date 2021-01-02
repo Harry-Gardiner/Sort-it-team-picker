@@ -15,7 +15,7 @@ export const randomiseArray = (playersArray) => {
         // set random index number to equal i index value
         playersArray[j] = temp;
 
-    }
+    };
 
     // return randomly shuffled array
     return playersArray;
@@ -42,29 +42,12 @@ export const generateTeams = (playersArray) => {
     const teamArrays = [];
 
     for (let i = 0; i < 2; i += 1) {
-        teamArrays.push(playersArray.filter((player, index) => index % 2 === i))
+        teamArrays.push(playersArray.filter((player, index) => index % 2 === i));
     };
 
     return teamArrays;
 };
 
-// test
+// testing
 // const testarray = ["Yaz", "Rob", "Tim", "Bob", "Jim", "Log", "Haz", "Baz", "Tom", "Sam", "a", "B", "CC", "DD"]
 // console.log(generateTeams2(testarray));
-
-// OLD LOGIC for creating team, but only works for random array. Splice cannot be used to creat balanced arrays
-// export const generateTeams = (playersArray) => {
-//     // middle of array
-//     const midpoint = playersArray.length / 2;
-
-//     // get first 5 players
-//     const team1 = playersArray.splice(0, midpoint);
-
-//     // get remaining 5 players
-//     const team2 = playersArray;
-
-//     // store teams as nested arrays
-//     const teams = [team1, team2];
-
-//     return teams;
-// };
