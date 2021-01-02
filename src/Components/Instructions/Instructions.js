@@ -6,7 +6,7 @@ const Instructions = () => {
             </p>
 
             <p>
-                To begin, choose then number of players required per team (minimum 2 players per team). Input players names as well as thier skill level (default 2). Once required number of players is reached you have two options to sort teams, random or balanced (based on skill).
+                To begin, choose then number of players required per team (minimum 3 players per team). Input players names as well as thier skill level (default 2). Once required number of players is reached you have two options to sort teams, random or balanced (based on skill).
             </p>
 
             <p>
@@ -25,7 +25,7 @@ const Instructions = () => {
                 This app was built by Harry as part of the DevelopMe_Coding Fellowship September-December 2020.
             </p>
         </div>
-    )
+    );
 };
 
 export default Instructions;

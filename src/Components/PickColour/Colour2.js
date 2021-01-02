@@ -5,9 +5,7 @@ import { setColour2 } from '../../data/actions';
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleColour: data => {
-            dispatch(setColour2(data));
-        }
+        handleColour: data => { dispatch(setColour2(data)) },
     };
 };
 

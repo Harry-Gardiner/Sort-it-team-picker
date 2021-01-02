@@ -4,8 +4,8 @@ import TeamJersey from './TeamJersey';
 
 const mapStateToProps = ({ team2Colour }) => {
     return {
-        colour: team2Colour
+        colour: team2Colour,
     };
 };
 
-export default connect(mapStateToProps)(TeamJersey)
+export default connect(mapStateToProps)(TeamJersey);

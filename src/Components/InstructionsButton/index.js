@@ -7,14 +7,14 @@ import { toggleInstructions } from '../../data/actions';
 const mapStateToProps = ({ showInstructions }) => {
     return {
         showInstructions,
-    }
-}
+    };
+};
 
 // dispatch
 const mapDispatchToProps = dispatch => {
     return {
         handleClick: () => { dispatch(toggleInstructions()) }
-    }
-}
+    };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(InstructionsButton);

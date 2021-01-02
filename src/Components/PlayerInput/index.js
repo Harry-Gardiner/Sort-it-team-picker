@@ -6,17 +6,15 @@ import { addPlayer } from '../../data/actions';
 // State
 const mapStateToProps = ({ requiredNumOfPlayers }) => {
     return {
-        requiredNumOfPlayers: requiredNumOfPlayers,
-    }
-}
+        requiredNumOfPlayers,
+    };
+};
 
 // Dispatch 
 const mapDispatchToProps = dispatch => {
     return {
-        handleSubmit: (data) => {
-            dispatch(addPlayer(data));
-        }
-    }
-}
+        handleSubmit: (data) => { dispatch(addPlayer(data)) }
+    };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(PlayerInputForm)

@@ -6,12 +6,12 @@ import Team2List from '../TeamList/Team2List';
 import BookiesFavourite from '../BookiesFavourite/index';
 
 const TeamsDisplay = ({ team1Colour, team2Colour, team1Name, team2Name, team1Home, team2Home }) => {
+    // on render scrolls page to top - only works on functional component
     useEffect(() => {
         const body = document.getElementById('top');
-
         body.scrollIntoView()
-
     }, []);
+
     return (
         <>
             <div className="card title">
@@ -49,7 +49,7 @@ const TeamsDisplay = ({ team1Colour, team2Colour, team1Name, team2Name, team1Hom
                 <BookiesFavourite />
             </div>
         </>
-    )
+    );
 };
 
 export default TeamsDisplay;

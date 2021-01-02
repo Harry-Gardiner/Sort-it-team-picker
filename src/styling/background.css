@@ -1,5 +1,6 @@
+/* app background */
 .background {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	background-size: cover;
 	background-repeat: no-repeat;

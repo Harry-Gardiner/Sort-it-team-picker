@@ -1,13 +1,13 @@
 const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
     return (
         <div className="card teamSize">
-            <h3>Set team size</h3>
+            <h2>Set team size</h2>
 
             <div className="flex">
                 <button
                     onClick={handleMinus}
-                    disabled={numberOfPlayers <= 2} // cant go below 2-aside, i.e. 4 players in total
-                    className="arrow"
+                    disabled={numberOfPlayers <= 3} // cant go below 3-aside, i.e. 6 players in total
+                    className={numberOfPlayers <= 3 ? "arrow button-disabled" : "arrow"}
                 >
                     {'<'}
                 </button>
@@ -22,7 +22,7 @@ const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
                 </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default NumberOfPlayers

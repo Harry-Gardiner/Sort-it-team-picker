@@ -4,8 +4,7 @@ import persistState from "redux-localstorage";
 import reducer from './reducer/reducer';
 import initial from './initial';
 
-const composeEnhancers =
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
     reducer,
