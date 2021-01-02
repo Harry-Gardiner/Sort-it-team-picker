@@ -137,7 +137,7 @@ class TeamNameInput extends Component {
                 </form>
             </div>
         )
-    }
+    };
 };
 
 export default TeamNameInput;

@@ -5,7 +5,7 @@ const InstructionsButton = ({ handleClick, showInstructions }) => {
         >
             {!showInstructions ? "Instructions" : "close"}
         </button>
-    )
-}
+    );
+};
 
 export default InstructionsButton;

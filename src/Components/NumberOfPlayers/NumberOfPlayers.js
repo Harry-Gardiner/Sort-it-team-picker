@@ -1,7 +1,7 @@
 const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
     return (
         <div className="card teamSize">
-            <h3>Set team size</h3>
+            <h2>Set team size</h2>
 
             <div className="flex">
                 <button
@@ -22,7 +22,7 @@ const NumberOfPlayers = ({ numberOfPlayers, handleAdd, handleMinus }) => {
                 </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default NumberOfPlayers

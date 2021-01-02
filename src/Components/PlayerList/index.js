@@ -5,14 +5,14 @@ import { deletePlayer } from '../../data/actions';
 
 const mapStateToProps = ({ players }) => {
     return {
-        players: players,
-    }
+        players,
+    };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleClick: (data) => dispatch(deletePlayer(data))
-    }
+        handleClick: (data) => dispatch(deletePlayer(data)),
+    };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PlayerList);

@@ -7,7 +7,7 @@ import Header from './Header';
 const mapStateToProps = ({ showInstructions }) => {
     return {
         showInstructions,
-    }
+    };
 };
 
 export default connect(mapStateToProps)(Header);

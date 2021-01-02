@@ -10,7 +10,6 @@ const HomeTeamButton = ({ home, handleClick }) => {
             </button>
         </div>
     );
-
 };
 
 export default HomeTeamButton;

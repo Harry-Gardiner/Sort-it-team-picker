@@ -25,7 +25,7 @@ const Instructions = () => {
                 This app was built by Harry as part of the DevelopMe_Coding Fellowship September-December 2020.
             </p>
         </div>
-    )
+    );
 };
 
 export default Instructions;

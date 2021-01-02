@@ -5,7 +5,7 @@ import CreateBalancedTeams from '../CreateBalancedTeams';
 const PlayerList = ({ players, handleClick }) => {
     return (
         <div className="card">
-            <h3>Player List<i className="fas fa-users"></i></h3>
+            <h2>Player List<i className="fas fa-users"></i></h2>
             <ul className="list-group">
                 {players.map((player, index) => {
                     return (
@@ -17,7 +17,9 @@ const PlayerList = ({ players, handleClick }) => {
                                     <i className="fas fa-male"></i>
                                     {player.name}
                                 </p>
-                                <p className="smallText">skill: {player.skill}</p>
+                                <p className="smallText">
+                                    skill: {player.skill}
+                                </p>
                             </li>
                             <button
                                 onClick={() => handleClick(index)}
@@ -34,7 +36,7 @@ const PlayerList = ({ players, handleClick }) => {
                 <CreateBalancedTeams />
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default PlayerList;

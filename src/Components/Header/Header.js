@@ -22,7 +22,7 @@ const Header = ({ showInstructions }) => {
                 </div>
             }
         </>
-    )
-}
+    );
+};
 
 export default Header; 

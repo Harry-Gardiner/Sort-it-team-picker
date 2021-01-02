@@ -21,7 +21,7 @@ const TeamList = ({ teamPlayers, teamColour }) => { // both teams will be passed
                 }
             </ul>
         </div>
-    )
-}
+    );
+};
 
 export default TeamList;

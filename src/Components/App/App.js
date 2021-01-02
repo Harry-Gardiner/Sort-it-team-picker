@@ -3,7 +3,7 @@ import Header from '../Header';
 import ComponentPanel from '../ComponentPanel';
 import TeamDisplay from '../TeamsDisplay/index';
 
-// Top component
+// Top level component
 const App = ({ teamsConfirmed }) => {
   return (
     <>

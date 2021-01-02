@@ -1,8 +1,6 @@
 // imports
 import AddPlayer from '../PlayerInput'
 import PlayerList from '../PlayerList'
-// import CreateTeams from '../CreateTeams';
-// import CreateBalancedTeams from '../CreateBalancedTeams';
 import NumberOfPlayers from '../NumberOfPlayers';
 import TeamsConfirmed from '../TeamsConfirmed';
 
@@ -16,8 +14,6 @@ const ComponentPanel = ({ teamsPicked }) => {
                     <NumberOfPlayers />
                     <AddPlayer />
                     <PlayerList />
-                    {/* <CreateTeams />
-                    <CreateBalancedTeams /> */}
                 </> :
                 // If teams are picked render team customisation page - kit, team name, home/away
                 <>
@@ -25,7 +21,7 @@ const ComponentPanel = ({ teamsPicked }) => {
                 </>
             }
         </>
-    )
-}
+    );
+};
 
 export default ComponentPanel;

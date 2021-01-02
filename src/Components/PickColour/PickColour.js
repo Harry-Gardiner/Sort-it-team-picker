@@ -9,7 +9,6 @@ const PickColour = ({ handleColour }) => {
     };
 
     return (
-
         <div className="flex">
             <p>Pick Team Colour:</p>
             <CirclePicker

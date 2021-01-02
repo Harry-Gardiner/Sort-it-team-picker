@@ -6,14 +6,14 @@ import { createBalancedTeams } from '../../data/actions';
 // state
 const mapStateToProps = ({ requiredNumOfPlayers }) => {
     return {
-        requiredNumOfPlayers: requiredNumOfPlayers,
+        requiredNumOfPlayers,
     };
 };
 
 // dispatch
 const mapDispatchToProps = dispatch => {
     return {
-        handleClick: () => { dispatch(createBalancedTeams()) }
+        handleClick: () => { dispatch(createBalancedTeams()) },
     };
 };
 

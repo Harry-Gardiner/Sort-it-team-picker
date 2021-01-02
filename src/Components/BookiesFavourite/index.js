@@ -11,15 +11,15 @@ const mapStateToProps = ({ team1Name, team2Name, teamsPicked, bookiesFavouriteIn
         teamsPicked,
         bookiesFavouriteInfo,
         showBookiesFavourite,
-        team1Home
-    }
-}
+        team1Home,
+    };
+};
 
 // dispatch
 const mapDispatchToProps = dispatch => {
     return {
         handleClick: () => { dispatch(createBookiesFavourite()) }
-    }
-}
+    };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookiesFavourite);

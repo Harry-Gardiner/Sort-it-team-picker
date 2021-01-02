@@ -16,21 +16,21 @@ class PlayerInputForm extends Component {
         this.handleName = this.handleName.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleSkill = this.handleSkill.bind(this);
-    }
+    };
 
     // handle name input
     handleName = e => {
         this.setState({
             playerName: e.currentTarget.value
-        })
-    }
+        });
+    };
 
     // handle skill selection
     handleSkill = e => {
         this.setState({
             playerSkill: +e.currentTarget.value
-        })
-    }
+        });
+    };
 
     // handle form submit
     handleSubmit = e => {
@@ -43,9 +43,9 @@ class PlayerInputForm extends Component {
         this.setState({
             playerName: "",
             playerSkill: 2,
-        })
+        });
 
-    }
+    };
 
     render() {
         const { playerName, playerSkill } = this.state;
@@ -56,7 +56,7 @@ class PlayerInputForm extends Component {
                 onSubmit={this.handleSubmit}
                 className="card playerInput"
             >
-                <h3>Input Player <i className="fas fa-user-plus"></i></h3>
+                <h2>Input Player <i className="fas fa-user-plus"></i></h2>
                 <div className="flex columnFlex">
                     <div >
                         <label htmlFor="player name">
@@ -108,7 +108,7 @@ class PlayerInputForm extends Component {
                 </div>
             </form>
         )
-    }
+    };
 };
 
 export default PlayerInputForm;
