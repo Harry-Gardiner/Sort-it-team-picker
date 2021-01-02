@@ -16,7 +16,7 @@ const TeamsDisplay = ({ team1Colour, team2Colour, team1Name, team2Name, team1Hom
                         className="minorPaddingBottom"
                     >
                         {team1Name}
-                        <span>{team1Home}</span>
+                        <p>{team1Home}</p>
                     </h3>
                     <Jersey
                         style={{ width: "5rem" }}
@@ -30,7 +30,7 @@ const TeamsDisplay = ({ team1Colour, team2Colour, team1Name, team2Name, team1Hom
                         className="minorPaddingBottom"
                     >
                         {team2Name}
-                        <span>{team2Home}</span>
+                        <p>{team2Home}</p>
                     </h3>
                     <Jersey
                         style={{ width: "5rem" }}
