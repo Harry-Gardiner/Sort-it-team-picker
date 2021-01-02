@@ -9,9 +9,7 @@ const TeamsDisplay = ({ team1Colour, team2Colour, team1Name, team2Name, team1Hom
     useEffect(() => {
         const body = document.getElementById('top');
 
-        body.scrollIntoView({
-            behavior: 'smooth'
-        }, 500)
+        body.scrollIntoView()
 
     }, []);
     return (
