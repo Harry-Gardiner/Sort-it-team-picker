@@ -9,7 +9,7 @@ const PlayerList = ({ players, handleClick }) => {
             <ul className="list-group">
                 {players.map((player, index) => {
                     return (
-                        <div key={index} className="flex">
+                        <div key={index} className="flexLi">
                             <li
                                 className="capitalize list-group-item flexList"
                             >
