@@ -11,14 +11,16 @@ export const getTeamSkill = (teamArray) => {
     });
 };
 
+// Add home advantage to team total skill
 export const calculateHomeAdvantage = (teamSkillTotal) => {
     // home team skill is given + 20% advantage
     teamSkillTotal = (teamSkillTotal *= 1.20).toFixed(1);
     return teamSkillTotal;
 };
 
+// Returns teamScores to be used throughout the app, home advantage is applied
 export const getScores = (team1Home, playersTeam1, playersTeam2) => {
-    // get team total skill
+    // get teams total skill
     let team1Skill = getTeamSkill(playersTeam1);
     let team2Skill = getTeamSkill(playersTeam2);
 
@@ -41,7 +43,6 @@ export const setFavouriteTeam = (teamSkills) => {
     // returns
     return teamSkills.team1Skill > teamSkills.team2Skill ? "team1" : "team2";
 };
-
 
 
 //testing
