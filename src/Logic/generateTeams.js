@@ -25,7 +25,7 @@ export const randomiseArray = (playersArray) => {
 // const players = ["Tim", "Bob", "Rob", "Jim", "Zim"]
 // console.log(randomiseArray(players));
 
-// Logic for ordering array based on skill
+// Logic for ordering array based on skill.
 export const balanceTeams = (playersArray) => {
     // sort array on skill, highest to lowest
     const balancedArray = playersArray.sort((a, b) => b.skill - a.skill);
@@ -37,7 +37,7 @@ export const balanceTeams = (playersArray) => {
 // const testarray = [{ name: "Bom", skill: 2 }, { name: "Lom", skill: 5 }, { name: "Kom", skill: 5 }, { name: "Rom", skill: 4 }, { name: "Com", skill: 4 }, { name: "Jom", skill: 3 }, { name: "Tom", skill: 3 }, { name: "Jim", skill: 2 }]
 // console.log(balanceTeams(testarray));
 
-// Logic for splitting either randomised array/balanced array. First loop (i = 0) grabs all even array items, second loop (i = 1) grabs all odd items.  
+// Logic for splitting either randomised array/balanced array. First loop (i = 0) grabs all even array items, second loop (i = 1) grabs all odd items. Due to balanceTeams being ordered highest to lowest the 1st team array will always receive the highest skilled player, therefore balanced is not truly equal, rather semi-balanced.
 export const generateTeams = (playersArray) => {
     const teamArrays = [];
 
