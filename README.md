@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Sort-it**
+Team generating app completed as part of the DevelopMe Coding Fellowship technical challenge. Built using React/Redux, the app allows users to add players, edit team size, generate and customise teams, and display bookies favourite.
 
-## Available Scripts
+View the app here.
 
-In the project directory, you can run:
+Contents:
+- [**Sort-it**](#sort-it)
+  - [## **Setup**](#-setup)
+    - [**Requirements**](#requirements)
+    - [**Installation**](#installation)
+  - [## **Brief**](#-brief)
+  - [## **Planning**](#-planning)
+  - [## **Features**](#-features)
+  - [## **Version Management**](#-version-management)
+  - [## **Improvements**](#-improvements)
+    - [Testing](#testing)
+    - [Styling](#styling)
+    - [Balance logic](#balance-logic)
+## **Setup**
+---
+### **Requirements**
+Check you have npm installed by running npm -v.
 
-### `npm start`
+### **Installation**
+Clone git repository and run npm install in the project folder:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`git clone git@github.com:Harry-Gardiner/Sort-it-team-picker.git`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`npm install`
 
-### `npm test`
+Once the packages have installed, run the app in development mode:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm start`
 
-### `npm run build`
+Open http://localhost:3000 to view it in the browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The page will reload if you make edits.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Brief**
+---
+The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names (10 players = 2 teams of 5).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+It's up to you how you implement this, with JavaScript, PHP, as a web page, or as an app.
 
-### `npm run eject`
+Optional advanced features might include:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+support for n-a-side, where a list of any length can be split into two teams.
+- support for balancing of the teams, where some measure of each 
+- player's strength is used to allocate teams fairly.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Planning**
+---
+I started by created an [ideas](ideas.md) document setting out the required MVP and stretch goals I wanted to achieve. I then pencilled my initial  wireframe ideas, once happy with those I created an online [wireframe](ideas.md#wireframe) detailing my initial  design layout.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## **Features**
+---
+**MVP:**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+App takes 10 names and randomly assigns them to two separate teams of 5 each.
 
-## Learn More
+**Additional features:**
+- Set team size - functionality to set different team size (minimum 3).
+- Balanced teams - functionality to generate teams based on player skill
+  - Skill selected using a range bar 1-5, default 2.
+- Delete player - remove from playerlist, enabling user to remove player if an error is made on input.
+- Add validation:
+  - Select Team size button < disabled upon reaching 3
+  - Player input - required, min character length 2, disabled upon reaching required number of players and add player button removed
+  - Create team buttons - disabled until required number of players has been input
+  - Team Name input - required field.
+- Team customisation - functionality to enter team names, select team kit colour, choose which teams home/away.
+- Home/away - home team received +20% to total skill value.
+- Bookies favourite - option to show bookies favourite, displaying which team is tipped to win
+    - favourite is determined using teams total skill value.
+- Reset - functionality to reset the app at any stage.
+- Add redux persist - state saved locally so progress is not lost if the page reloads.
+- Instructions - dropdown information, detailing minimum information to navigate and work the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Future features:**
+- Copy to clipboard - enable user to copy team lists for further distribution.
+- Match result - feature enabling user to input match result.
+- Back end - develop a dedicated back end, at minimum:
+  - POST match data - team names, match result, team colours
+  - GET match data - return all matches that have been played, with the latest match first 
+- Match history - feature showing all previous matches called from the back end
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **Version Management**
+---
+I used git and GitHub throughout the project. I used the Feature Branch Workflow, by working on feature branches that were merged back into master using pull requests.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## **Improvements**
+---
+### Testing
+I carried out command line tests on team generation logic. With more time I would have carried out more thorough testing, creating .test.js files, possibly implementing a framework such as Jest. 
 
-### Analyzing the Bundle Size
+### Styling
+Create a more comprehensive CSS root file covering more shared styling attributed. Adopted a CSS class naming structure such as BEM. Written styling in SASS to keep things more organised and readable. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Balance logic
+Balanced teams are not truly balanced, the logic needs to be more robust to ensure teams are equally split. The limitation with the current logic is that team 1 will always be at a slight advantage as they will always receive the highest skilled player and team 2 will always receive the lowest skilled player. 
