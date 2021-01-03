@@ -80,7 +80,7 @@ class PlayerInputForm extends Component {
                             }}
                         />
                     </div>
-                    <div className>
+                    <div>
                         <label htmlFor="player skill">
                             Player Skill:
                         </label>
