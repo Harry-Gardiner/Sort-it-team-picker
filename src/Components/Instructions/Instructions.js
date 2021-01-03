@@ -6,7 +6,7 @@ const Instructions = () => {
             </p>
 
             <p>
-                To begin, choose then number of players required per team (minimum 3 players per team). Input players names as well as thier skill level (default 2). Once required number of players is reached you have two options to sort teams, random or balanced (based on skill).
+                To begin, choose the number of players required per team (minimum 3 players per team). Input players names as well as their skill level (default 2). Once required number of players is reached you have two options to sort teams, random or balanced (based on skill).
             </p>
 
             <p>
@@ -14,7 +14,7 @@ const Instructions = () => {
             </p>
 
             <p>
-                The final page, pre-match information, outputs both teams as seperate list. There is also a button to reveal the bookies favourite, which is calculated using skill totals and home advatnage.
+                Lastly, pre-match information, outputs both teams as separate list. There is also a button to reveal the bookies favourite, which is calculated using skill totals and home advantage.
             </p>
 
             <p>

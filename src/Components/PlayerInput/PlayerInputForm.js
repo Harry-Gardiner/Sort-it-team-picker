@@ -80,9 +80,9 @@ class PlayerInputForm extends Component {
                             }}
                         />
                     </div>
-                    <div>
+                    <div className>
                         <label htmlFor="player skill">
-                            Select Player Skill:
+                            Player Skill:
                         </label>
 
                         <input
@@ -96,6 +96,7 @@ class PlayerInputForm extends Component {
                             onChange={this.handleSkill}
                             required
                         />
+                        <p>{playerSkill}</p>
                     </div>
 
                     {requiredNumOfPlayers ? null :
