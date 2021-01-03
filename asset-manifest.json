@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Sort-it-team-picker/static/css/main.02db2d66.chunk.css",
+    "main.js": "/Sort-it-team-picker/static/js/main.34fd86f6.chunk.js",
+    "main.js.map": "/Sort-it-team-picker/static/js/main.34fd86f6.chunk.js.map",
+    "runtime-main.js": "/Sort-it-team-picker/static/js/runtime-main.549e7837.js",
+    "runtime-main.js.map": "/Sort-it-team-picker/static/js/runtime-main.549e7837.js.map",
+    "static/js/2.9011caa5.chunk.js": "/Sort-it-team-picker/static/js/2.9011caa5.chunk.js",
+    "static/js/2.9011caa5.chunk.js.map": "/Sort-it-team-picker/static/js/2.9011caa5.chunk.js.map",
+    "index.html": "/Sort-it-team-picker/index.html",
+    "static/css/main.02db2d66.chunk.css.map": "/Sort-it-team-picker/static/css/main.02db2d66.chunk.css.map",
+    "static/js/2.9011caa5.chunk.js.LICENSE.txt": "/Sort-it-team-picker/static/js/2.9011caa5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Sort-it-team-picker/static/media/smallerBall.65f47ec8.jpg",
+    "static/media/boot.5a28d5b5.svg": "/Sort-it-team-picker/static/media/boot.5a28d5b5.svg",
+    "static/media/jersey.839daec3.svg": "/Sort-it-team-picker/static/media/jersey.839daec3.svg",
+    "static/media/short.ac343de9.svg": "/Sort-it-team-picker/static/media/short.ac343de9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.549e7837.js",
+    "static/js/2.9011caa5.chunk.js",
+    "static/css/main.02db2d66.chunk.css",
+    "static/js/main.34fd86f6.chunk.js"
+  ]
+}
