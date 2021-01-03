@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Sort-it-team-picker/static/css/main.d6e29a17.chunk.css",
-    "main.js": "/Sort-it-team-picker/static/js/main.8c2ea144.chunk.js",
-    "main.js.map": "/Sort-it-team-picker/static/js/main.8c2ea144.chunk.js.map",
+    "main.js": "/Sort-it-team-picker/static/js/main.46f68a86.chunk.js",
+    "main.js.map": "/Sort-it-team-picker/static/js/main.46f68a86.chunk.js.map",
     "runtime-main.js": "/Sort-it-team-picker/static/js/runtime-main.549e7837.js",
     "runtime-main.js.map": "/Sort-it-team-picker/static/js/runtime-main.549e7837.js.map",
     "static/js/2.9011caa5.chunk.js": "/Sort-it-team-picker/static/js/2.9011caa5.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.549e7837.js",
     "static/js/2.9011caa5.chunk.js",
     "static/css/main.d6e29a17.chunk.css",
-    "static/js/main.8c2ea144.chunk.js"
+    "static/js/main.46f68a86.chunk.js"
   ]
 }
