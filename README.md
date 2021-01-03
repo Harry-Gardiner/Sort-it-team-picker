@@ -2,7 +2,7 @@
 # **Sort-it**
 Team generating app completed as part of the DevelopMe Coding Fellowship technical challenge. Built using React/Redux, the app allows users to add players, edit team size, generate and customise teams, and display bookies favourite.
 
-View the app here.
+View the app [here](https://harry-gardiner.github.io/Sort-it-team-picker/).
 
 Contents:
 - [**Sort-it**](#sort-it)
